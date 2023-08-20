@@ -16,6 +16,7 @@ public class Level_03_Page_Objects_01_Register {
 	HomePageObject homePage;
 	RegisterPageObject registerPage;
 	String emailAdress;
+	String inValidEmailAdress;
 	String projectPath = System.getProperty("user.dir");
 
 	@BeforeClass
@@ -25,6 +26,7 @@ public class Level_03_Page_Objects_01_Register {
 		homePage = new HomePageObject(driver);
 		registerPage = new RegisterPageObject(driver);
 		emailAdress = "automation" + generateFakeNumber() + "@gmail.com";
+		inValidEmailAdress = "automation@abc" + generateFakeNumber() + "@gmail.com";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
 	}
@@ -44,11 +46,11 @@ public class Level_03_Page_Objects_01_Register {
 	public void Register_02_InvalidEmail() {
 		homePage.clickToRegisterLink();
 		
-		registerPage.senkeysToFirstNameTextbox();
-		registerPage.senkeysToLastNameTextbox();
-		registerPage.senkeysToEmailTextbox();
-		registerPage.senkeysToPasswordTextbox();
-		registerPage.senkeysToConfirmPasswordTextbox();
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToPasswordTextbox("12345a");
+		registerPage.senkeysToConfirmPasswordTextbox("12345a");
 
 		registerPage.clickToRegisterButton();
 		
@@ -61,11 +63,11 @@ public class Level_03_Page_Objects_01_Register {
 		
 		homePage.clickToRegisterLink();
 		
-		registerPage.senkeysToFirstNameTextbox();
-		registerPage.senkeysToLastNameTextbox();
-		registerPage.senkeysToEmailTextbox();
-		registerPage.senkeysToPasswordTextbox();
-		registerPage.senkeysToConfirmPasswordTextbox();
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(inValidEmailAdress);
+		registerPage.senkeysToPasswordTextbox("12345a");
+		registerPage.senkeysToConfirmPasswordTextbox("12345a");
 
 		registerPage.clickToRegisterButton();
 		
@@ -76,40 +78,40 @@ public class Level_03_Page_Objects_01_Register {
 	public void Register_04_Email_Exit() {
 		homePage.clickToRegisterLink();
 
-		registerPage.senkeysToFirstNameTextbox();
-		registerPage.senkeysToLastNameTextbox();
-		registerPage.senkeysToEmailTextbox();
-		registerPage.senkeysToPasswordTextbox();
-		registerPage.senkeysToConfirmPasswordTextbox();
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToPasswordTextbox("12345a");
+		registerPage.senkeysToConfirmPasswordTextbox("12345a");
 
 		registerPage.clickToRegisterButton();
 		
-		Assert.assertEquals(registerPage.getErorMessageEmailTextbox(), "The specified email already exists");
+		Assert.assertEquals(registerPage.getErorMessageExitEmail(), "The specified email already exists");
 }
 
 	@Test
 	public void Register_05_PasswordLessThan6Character() {
 		homePage.clickToRegisterLink();
 		
-		registerPage.senkeysToFirstNameTextbox();
-		registerPage.senkeysToLastNameTextbox();
-		registerPage.senkeysToEmailTextbox();
-		registerPage.senkeysToPasswordTextbox();
-		registerPage.senkeysToConfirmPasswordTextbox();
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToPasswordTextbox("1234");
+		registerPage.senkeysToConfirmPasswordTextbox("1234");
 
 		registerPage.clickToRegisterButton();
-		Assert.assertEquals(registerPage.getErorMessagePasswordTextbox(), "Password must meet the following rules:/nmust have at least 6 characters");
+		Assert.assertEquals(registerPage.getErorMessageAtPasswordTextbox(), "Password must meet the following rules:/nmust have at least 6 characters");
 		}
 
 	@Test
 	public void Register_06_ConfirmPassword() {
 		homePage.clickToRegisterLink();
 		
-		registerPage.senkeysToFirstNameTextbox();
-		registerPage.senkeysToLastNameTextbox();
-		registerPage.senkeysToEmailTextbox();
-		registerPage.senkeysToPasswordTextbox();
-		registerPage.senkeysToConfirmPasswordTextbox();
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToPasswordTextbox("12345a");
+		registerPage.senkeysToConfirmPasswordTextbox("1234a");
 
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getErorMessageConfirmPasswordTextbox(), "The password and confirmation password do not match.");
