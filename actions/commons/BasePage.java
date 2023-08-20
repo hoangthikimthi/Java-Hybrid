@@ -102,7 +102,7 @@ public class BasePage {
 	}
 
 	// Element
-	public By getByXpath(String xpathLocator) {
+	private By getByXpath(String xpathLocator) {
 		return By.xpath(xpathLocator);
 	}
 
@@ -117,7 +117,7 @@ public class BasePage {
 	public void senkeysToElement(WebDriver driver, String xpathLocator, String textValue) {
 		WebElement element = getWebElement(driver, xpathLocator);
 		element.clear();
-		element.sendKeys();
+		element.sendKeys(textValue);
 	}
 
 	public String getElementText(WebDriver driver, String xpathLocator) {

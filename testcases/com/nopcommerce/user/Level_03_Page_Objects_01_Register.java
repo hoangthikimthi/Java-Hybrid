@@ -26,7 +26,7 @@ public class Level_03_Page_Objects_01_Register {
 		homePage = new HomePageObject(driver);
 		registerPage = new RegisterPageObject(driver);
 		emailAdress = "automation" + generateFakeNumber() + "@gmail.com";
-		inValidEmailAdress = "automation@abc" + generateFakeNumber() + "@gmail.com";
+		inValidEmailAdress = "automation@abc@om";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
 	}
@@ -48,7 +48,7 @@ public class Level_03_Page_Objects_01_Register {
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
-		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToEmailTextbox(inValidEmailAdress);
 		registerPage.senkeysToPasswordTextbox("12345a");
 		registerPage.senkeysToConfirmPasswordTextbox("12345a");
 
@@ -65,7 +65,7 @@ public class Level_03_Page_Objects_01_Register {
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
-		registerPage.senkeysToEmailTextbox(inValidEmailAdress);
+		registerPage.senkeysToEmailTextbox(emailAdress);
 		registerPage.senkeysToPasswordTextbox("12345a");
 		registerPage.senkeysToConfirmPasswordTextbox("12345a");
 
@@ -95,12 +95,12 @@ public class Level_03_Page_Objects_01_Register {
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
-		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToEmailTextbox("thi.hoang@gmail.com");
 		registerPage.senkeysToPasswordTextbox("1234");
 		registerPage.senkeysToConfirmPasswordTextbox("1234");
 
 		registerPage.clickToRegisterButton();
-		Assert.assertEquals(registerPage.getErorMessageAtPasswordTextbox(), "Password must meet the following rules:/nmust have at least 6 characters");
+		Assert.assertEquals(registerPage.getErorMessageAtPasswordTextbox(), "Password must meet the following rules:\nmust have at least 6 characters");
 		}
 
 	@Test
@@ -109,7 +109,7 @@ public class Level_03_Page_Objects_01_Register {
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
-		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToEmailTextbox("thi.hoang1@gmail.com");
 		registerPage.senkeysToPasswordTextbox("12345a");
 		registerPage.senkeysToConfirmPasswordTextbox("1234a");
 
@@ -127,7 +127,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		//driver.quit();
 	}
 
 }
