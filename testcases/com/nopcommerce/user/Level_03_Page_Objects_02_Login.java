@@ -1,112 +1,115 @@
 package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
+
+import nopcommerce.HomePageUI;
+import pageObjects.HomePageObject;
+import pageObjects.LoginPageObject;
+import pageObjects.RegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class Level_03_Page_Objects_02_Login {
 	WebDriver driver;
+	HomePageObject homePage;
+	LoginPageObject loginPage;
+	RegisterPageObject registerPage;
 	String emailAdress;
+	String password;
+	Alert alert;
 	String projectPath = System.getProperty("user.dir");
 
 	@BeforeClass
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + ".\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
+		homePage = new HomePageObject(driver);
+		loginPage = new LoginPageObject(driver);
+		registerPage = new RegisterPageObject(driver);
+
 		emailAdress = "automation" + generateFakeNumber() + "@gmail.com";
+		password = "12345a";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.nopcommerce.com/");
+
+		homePage.clickToRegisterLink();
+
+		registerPage.senkeysToFirstNameTextbox("thi");
+		registerPage.senkeysToLastNameTextbox("hoang");
+		registerPage.senkeysToEmailTextbox(emailAdress);
+		registerPage.senkeysToPasswordTextbox(password);
+		registerPage.senkeysToConfirmPasswordTextbox(password);
+
+		registerPage.clickToRegisterButton();
+
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
+		// registerPage.clickToLogoutLink();
+		homePage = new HomePageObject(driver);
 	}
 
 	@Test
-	public void TC_01_Register_EmptyData() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
-
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='FirstName-error']")).getText(), "First name is required.");
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='LastName-error']")).getText(), "Last name is required.");
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='Password-error']")).getText(), "Password is required.");
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='ConfirmPassword-error']")).getText(), "Password is required.");
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='Email-error']")).getText(), "Email is required.");
+	public void Login_01_EmptyData() {
+		homePage.clickToLoginLink();
+		loginPage = new LoginPageObject(driver);
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getEmailErrorMessageTextbox(), "Please enter your email");
 	}
 
 	@Test
-	public void TC_02_Register_InvalidEmail() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
-		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Automation");
-		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("PC");
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys("123@456#");
-		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("123456a");
-		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("123456a");
-
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='Email-error']")).getText(), "Wrong email");
+	public void Login_02_InvalidEmail() {
+		homePage.clickToLoginLink();
+		loginPage.sendkeysEmailTextbox("thi.hoang");
+		loginPage.clickToLoginButton();
+		alert = driver.switchTo().alert();
+		alert.dismiss();
+		Assert.assertEquals(loginPage.getEmailErrorMessageTextbox(), "Wrong email");
 	}
 
 	@Test
-	public void TC_03_Register_ValidEmail() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
-		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Automation");
-		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("PC");
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(emailAdress);
-		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("123456a");
-		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("123456a");
-
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='result']")).getText(), "Your registration completed");
+	public void Login_03_UnredisteredEmail() {
+		homePage.clickToLoginLink();
+		loginPage.sendkeysEmailTextbox("thihoang1122334@gmail.com");
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
 	}
 
 	@Test
-	public void TC_04_Register_Email_Exit() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
-		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Automation");
-		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("PC");
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(emailAdress);
-		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("123456a");
-		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("123456a");
+	public void Login_04_EmptyPassword() {
+		homePage.clickToLoginLink();
+		loginPage.sendkeysEmailTextbox(emailAdress);
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
 
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='message-error validation-summary-errors']//li")).getText(), "The specified email already exists");
 	}
 
 	@Test
-	public void TC_05_Register_PasswordLessThan6Character() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
+	public void Login_05_WrongPassword() {
+		homePage.clickToLoginLink();
+		loginPage.sendkeysEmailTextbox(emailAdress);
+		loginPage.sendkeysPasswordTextbox("adsggg");
+		loginPage.clickToLoginButton();
+		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
 
-		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Automation");
-		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("PC");
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(emailAdress);
-		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("1234a");
-		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("1234a");
-
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='Password-error']/p")).getText(), "Password must meet the following rules:");
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='Password-error']//li")).getText(), "must have at least 6 characters");
 	}
 
 	@Test
-	public void TC_06_ConfirmPassword() {
-		driver.findElement(By.xpath("//a[@class='ico-register']")).click();
-
-		driver.findElement(By.xpath("//input[@id='FirstName']")).sendKeys("Automation");
-		driver.findElement(By.xpath("//input[@id='LastName']")).sendKeys("PC");
-		driver.findElement(By.xpath("//input[@id='Email']")).sendKeys(emailAdress);
-		driver.findElement(By.xpath("//input[@id='Password']")).sendKeys("123456a");
-		driver.findElement(By.xpath("//input[@id='ConfirmPassword']")).sendKeys("123467");
-
-		driver.findElement(By.xpath("//button[@name='register-button']")).click();
-		Assert.assertEquals(driver.findElement(By.xpath("//span[@id='ConfirmPassword-error']")).getText(), "The password and confirmation password do not match.");
+	public void Login_06_ValidLogin() {
+		homePage.clickToLoginLink();
+		loginPage.sendkeysEmailTextbox(emailAdress);
+		loginPage.sendkeysPasswordTextbox(password);
+		loginPage.clickToLoginButton();
+		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
 
 	}
 
@@ -118,7 +121,7 @@ public class Level_03_Page_Objects_02_Login {
 
 	@AfterClass
 	public void afterClass() {
-		driver.quit();
+		// driver.quit();
 	}
 
 }

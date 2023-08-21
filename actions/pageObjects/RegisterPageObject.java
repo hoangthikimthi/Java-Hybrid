@@ -3,7 +3,6 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import nopcommerce.HomePageUI;
 import nopcommerce.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage {
@@ -21,7 +20,7 @@ public class RegisterPageObject extends BasePage {
 	public String getErorMessageAtFirstNameTextbox() {
 		waitForElementVisible(driver, RegisterPageUI.FIRSTNAME_ERROR);
 		return getElementText(driver, RegisterPageUI.FIRSTNAME_ERROR);
-		
+
 	}
 
 	public String getErorMessageAtLastNameTextbox() {
@@ -42,7 +41,7 @@ public class RegisterPageObject extends BasePage {
 	public String getErorMessageEmailTextbox() {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_ERROR);
 		return getElementText(driver, RegisterPageUI.EMAIL_ERROR);
-	
+
 	}
 
 	public void senkeysToFirstNameTextbox(String firstName) {
@@ -74,14 +73,18 @@ public class RegisterPageObject extends BasePage {
 	public String getRegisterSuccessMessage() {
 		waitForElementVisible(driver, RegisterPageUI.REGISTER_SUCCESS_MASSAGE);
 		return getElementText(driver, RegisterPageUI.REGISTER_SUCCESS_MASSAGE);
-	
-	}
 
+	}
 
 	public String getErorMessageExitEmail() {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_EXIT_MASSAGE);
 		return getElementText(driver, RegisterPageUI.EMAIL_EXIT_MASSAGE);
-	
+
+	}
+
+	public void clickToLogoutLink() {
+		waitForElementVisible(driver, RegisterPageUI.LOGOUT_LINK);
+		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
 	}
 
 }
