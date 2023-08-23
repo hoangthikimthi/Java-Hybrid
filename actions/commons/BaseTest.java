@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
@@ -15,16 +17,13 @@ public class BaseTest {
 	protected WebDriver getBrowserDriver(String browserName) {
 		switch (browserName) {
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", projectPath + ".\\browserDrivers\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver = WebDriverManager.firefoxdriver().create();
 			break;
 		case "chrome":
-			System.setProperty("webdriver.chrome.driver", projectPath + ".\\browserDrivers\\chromedriver.exe");
-			driver = new ChromeDriver();
+			driver = WebDriverManager.chromedriver().create();
 			break;
 		case "edge":
-			System.setProperty("webdriver.edge.driver", projectPath + ".\\browserDrivers\\msedgedriver.exe");
-			driver = new EdgeDriver();
+			driver = WebDriverManager.edgedriver().create();
 			break;
 		default:
 			throw new RuntimeException("please enter the correct Browser name!");
