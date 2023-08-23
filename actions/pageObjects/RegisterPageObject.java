@@ -3,6 +3,7 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
+import nopcommerce.HomePageUI;
 import nopcommerce.RegisterPageUI;
 
 public class RegisterPageObject extends BasePage {
@@ -85,6 +86,12 @@ public class RegisterPageObject extends BasePage {
 	public void clickToLogoutLink() {
 		waitForElementVisible(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
+	}
+
+	public void clickToLoginLink() {
+		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
+		clickToElement(driver, HomePageUI.LOGIN_LINK);
+
 	}
 
 }
