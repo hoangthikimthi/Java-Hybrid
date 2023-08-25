@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Nopcommerce">
 
- <test name="Run on FIREFOX">
+<!-- <test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
@@ -19,6 +19,13 @@
 		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
+		</classes>
+	</test>--> 
+
+ <test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.nopcommerce.user.Level_05_Page_Factory_Login" />
 		</classes>
 	</test>
 

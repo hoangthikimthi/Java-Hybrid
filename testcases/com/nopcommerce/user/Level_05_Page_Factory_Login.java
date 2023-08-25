@@ -2,41 +2,27 @@ package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
 
-import com.beust.jcommander.Parameter;
-
 import commons.BaseTest;
-import nopcommerce.HomePageUI;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageFactory.HomePageObject;
+import pageFactory.LoginPageObject;
+import pageFactory.RegisterPageObject;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_03_Page_Objects_02_Login extends BaseTest {
+public class Level_05_Page_Factory_Login extends BaseTest {
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
-	String validPassword;
-	String firstName;
-	String lastName;
-	String invalidEmail;
-	String exittingEmail;
-	String notFoundEmail;
-	String inValidPassword;
+	String validPassword, firstName, lastName, invalidEmail, exittingEmail, notFoundEmail, inValidPassword;
 
 	@Parameters("browser")
 	@BeforeClass
@@ -50,8 +36,6 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 		notFoundEmail = "automation" + generateFakeNumber() + "@gmail.com";
 		validPassword = "12345a";
 		inValidPassword = "1234";
-		// loginPage = new LoginPageObject(driver);
-		// registerPage = new RegisterPageObject(driver);
 
 		homePage.clickToRegisterLink();
 		registerPage = new RegisterPageObject(driver);
@@ -64,8 +48,9 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		// registerPage.clickToLogoutLink();
+
 		homePage = new HomePageObject(driver);
+
 	}
 
 	@Test
