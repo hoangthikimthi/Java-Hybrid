@@ -29,14 +29,16 @@ public class HomePageObject extends BasePageFactory {
 	private WebElement logoutLink;
 
 	// Page object/action
-	public void clickToRegisterLink() {
+	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickable(driver, registerLink);
 		clickToElement(driver, registerLink);
+		return new RegisterPageObject(driver);
 	}
 
-	public void clickToLoginLink() {
+	public LoginPageObject clickToLoginLink() {
 		waitForElementClickable(driver, loginLink);
 		clickToElement(driver, loginLink);
+		return new LoginPageObject(driver);
 	}
 
 	public boolean isLogoutLinkDisplayed() {
