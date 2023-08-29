@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
+import pageObjects.MyAccountPageObject;
 import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
 import org.testng.annotations.BeforeClass;
@@ -13,11 +14,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_06_Page_Generator_Manager_Login extends BaseTest {
+public class Level_07_Switch_Page_Login extends BaseTest {
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
+	MyAccountPageObject myAccountPage;
 	String validPassword, firstName, lastName, invalidEmail, exittingEmail, notFoundEmail, inValidPassword;
 
 	@Parameters("browser")
@@ -35,6 +37,10 @@ public class Level_06_Page_Generator_Manager_Login extends BaseTest {
 		// loginPage = new LoginPageObject(driver);
 		// registerPage = new RegisterPageObject(driver);
 
+	}
+
+	@Test
+	public void User_01_Register() {
 		registerPage = homePage.clickToRegisterLink();
 
 		registerPage.senkeysToFirstNameTextbox(firstName);
@@ -46,39 +52,27 @@ public class Level_06_Page_Generator_Manager_Login extends BaseTest {
 		registerPage.clickToRegisterButton();
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-		// registerPage.clickToLogoutLink();
+		homePage = registerPage.clickToHomePageLink();
 
 	}
 
 	@Test
-	public void Login_01_EmptyData() {
+	public void User_02_Login() {
 		loginPage = homePage.clickToLoginLink();
-		loginPage.clickToLoginButton();
-		Assert.assertEquals(loginPage.getEmailErrorMessageTextbox(), "Please enter your email");
+		loginPage.sendkeysEmailTextbox(exittingEmail);
+		loginPage.sendkeysPasswordTextbox(validPassword);
+
+		homePage = loginPage.clickToLoginButton();
+		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
 	}
 
 	@Test
-	public void Login_02_InvalidEmail() {
-		loginPage = homePage.clickToLoginLink();
-		loginPage.sendkeysEmailTextbox("thi.hoang");
-		loginPage.clickToLoginButton();
+	public void User_03_MyAccount() {
 
-		Assert.assertEquals(loginPage.getEmailErrorMessageTextbox(), "Wrong email");
 	}
 
 	@Test
-	public void Login_03_UnredisteredEmail() {
-		loginPage = homePage.clickToLoginLink();
-
-		loginPage.sendkeysEmailTextbox("thihoang1122334@gmail.com");
-
-		loginPage.clickToLoginButton();
-
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nNo customer account found");
-	}
-
-	@Test
-	public void Login_04_EmptyPassword() {
+	public void User_04_SwitchPage() {
 		loginPage = homePage.clickToLoginLink();
 		loginPage.sendkeysEmailTextbox(exittingEmail);
 		loginPage.clickToLoginButton();

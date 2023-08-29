@@ -21,5 +21,5 @@ public class RegisterPageUI {
 	public static final String EMAIL_EXIT_MASSAGE = "//div[@class='message-error validation-summary-errors']//li";
 
 	public static final String LOGOUT_LINK = "//a[@class='ico-logout']";
-
+	public static final String IMG_HOME_LINK = "//img[@alt='nopCommerce demo store']";
 }

@@ -94,4 +94,10 @@ public class RegisterPageObject extends BasePage {
 
 	}
 
+	public HomePageObject clickToHomePageLink() {
+		waitForElementClickable(driver, RegisterPageUI.IMG_HOME_LINK);
+		clickToElement(driver, RegisterPageUI.IMG_HOME_LINK);
+		return PageGeneratorManager.getHomePage(driver);
+	}
+
 }
