@@ -4,9 +4,13 @@ import org.testng.annotations.Test;
 import commons.BaseTest;
 import pageObjects.HomePageObject;
 import pageObjects.LoginPageObject;
-import pageObjects.MyAccountPageObject;
+import pageObjects.MyProductReviewPageObject;
+import pageObjects.AddressPageObject;
+import pageObjects.CustomerInfoPageObject;
 import pageObjects.PageGeneratorManager;
 import pageObjects.RegisterPageObject;
+import pageObjects.RewardPointPageObject;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import java.util.Random;
@@ -19,7 +23,11 @@ public class Level_07_Switch_Page_Login extends BaseTest {
 	HomePageObject homePage;
 	LoginPageObject loginPage;
 	RegisterPageObject registerPage;
-	MyAccountPageObject myAccountPage;
+	CustomerInfoPageObject customerInfoPage;
+	AddressPageObject addressPage;
+	MyProductReviewPageObject myProductReviewPage;
+	RewardPointPageObject rewardPointPage;
+
 	String validPassword, firstName, lastName, invalidEmail, exittingEmail, notFoundEmail, inValidPassword;
 
 	@Parameters("browser")
@@ -68,37 +76,32 @@ public class Level_07_Switch_Page_Login extends BaseTest {
 
 	@Test
 	public void User_03_MyAccount() {
-
+		customerInfoPage = homePage.clickToMyAccountLink();
+		Assert.assertTrue(customerInfoPage.isCustomerInfoPageDisplayed());
 	}
 
 	@Test
 	public void User_04_SwitchPage() {
-		loginPage = homePage.clickToLoginLink();
-		loginPage.sendkeysEmailTextbox(exittingEmail);
-		loginPage.clickToLoginButton();
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
-
+		// customer Info -> Address
+		addressPage = customerInfoPage.openAddressPage(driver);
+		// Address -> My Product Review
+		myProductReviewPage = addressPage.openMyProductReviewPage(driver);
+		// My Product Review -> Reward Point
+		rewardPointPage = myProductReviewPage.openRewardPointPage(driver);
+		// Reward Point -> Address
+		addressPage = rewardPointPage.openAddressPage(driver);
+		// Address -> Reward Point
+		rewardPointPage = addressPage.openRewardPointPage(driver);
+		// Reward Point -> My Product Review
+		myProductReviewPage = rewardPointPage.openMyProductReviewPage(driver);
+		// My product review -> address
+		addressPage = myProductReviewPage.openAddressPage(driver);
 	}
 
 	@Test
-	public void Login_05_WrongPassword() {
-		loginPage = homePage.clickToLoginLink();
-		loginPage.sendkeysEmailTextbox(exittingEmail);
-		loginPage.sendkeysPasswordTextbox(inValidPassword);
-		loginPage.clickToLoginButton();
-		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
-
-	}
-
-	@Test
-	public void Login_06_ValidLogin() {
-		loginPage = homePage.clickToLoginLink();
-		loginPage.sendkeysEmailTextbox(exittingEmail);
-		loginPage.sendkeysPasswordTextbox(validPassword);
-
-		homePage = loginPage.clickToLoginButton();
-		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
-
+	public void User_04_Switch_Role() {
+		// role user-> admin
+		// admin->user
 	}
 
 	public int generateFakeNumber() {
