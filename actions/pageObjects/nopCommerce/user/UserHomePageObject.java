@@ -1,29 +1,30 @@
-package pageObjects;
+package pageObjects.nopCommerce.user;
 
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import nopcommerce.HomePageUI;
+import commons.PageGeneratorManager;
+import pageUIs.nopCommerce.user.HomePageUI;
 
-public class HomePageObject extends BasePage {
+public class UserHomePageObject extends BasePage {
 	WebDriver driver;
 
-	public HomePageObject(WebDriver driver) {
+	public UserHomePageObject(WebDriver driver) {
 		this.driver = driver;
 	}
 
-	public RegisterPageObject clickToRegisterLink() {
+	public UserRegisterPageObject openRegisterPage() {
 		waitForElementClickable(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
 		// return new RegisterPageObject(driver);
-		return PageGeneratorManager.getRegisterPage(driver);
+		return PageGeneratorManager.getUserRegisterPage(driver);
 	}
 
-	public LoginPageObject clickToLoginLink() {
+	public UserLoginPageObject openLoginPage() {
 		waitForElementClickable(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
 		// return new LoginPageObject(driver);
-		return PageGeneratorManager.getLoginPage(driver);
+		return PageGeneratorManager.getUserLoginPage(driver);
 	}
 
 	public boolean isLogoutLinkDisplayed() {
@@ -31,11 +32,11 @@ public class HomePageObject extends BasePage {
 		return isElementDisplayed(driver, HomePageUI.LOGOUT_LINK);
 	}
 
-	public CustomerInfoPageObject clickToMyAccountLink() {
+	public UserCustomerInfoPageObject clickToMyAccountLink() {
 		waitForElementClickable(driver, HomePageUI.MYACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MYACCOUNT_LINK);
 		// return new RegisterPageObject(driver);
-		return PageGeneratorManager.getMyAccountPage(driver);
+		return PageGeneratorManager.getUserCustomerInfoPage(driver);
 	}
 
 }

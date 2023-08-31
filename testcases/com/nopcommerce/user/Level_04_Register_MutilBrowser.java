@@ -3,8 +3,9 @@ package com.nopcommerce.user;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
@@ -17,8 +18,8 @@ import org.testng.annotations.AfterClass;
 
 public class Level_04_Register_MutilBrowser extends BaseTest {
 	WebDriver driver;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
+	UserHomePageObject homePage;
+	UserRegisterPageObject registerPage;
 	String emailAdress;
 	String inValidEmailAdress;
 	String projectPath = System.getProperty("user.dir");
@@ -27,15 +28,15 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
+		homePage = new UserHomePageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		emailAdress = "automation" + generateFakeNumber() + "@gmail.com";
 		inValidEmailAdress = "automation@abc@om";
 	}
 
 	@Test
 	public void Register_01_EmptyData() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getErorMessageAtFirstNameTextbox(), "First name is required.");
 		Assert.assertEquals(registerPage.getErorMessageAtLastNameTextbox(), "Last name is required.");
@@ -46,7 +47,7 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 
 	@Test
 	public void Register_02_InvalidEmail() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -63,7 +64,7 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 	@Test
 	public void Register_03_ValidEmail() {
 
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -78,7 +79,7 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 
 	@Test
 	public void Register_04_Email_Exit() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -93,7 +94,7 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 
 	@Test
 	public void Register_05_PasswordLessThan6Character() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -107,7 +108,7 @@ public class Level_04_Register_MutilBrowser extends BaseTest {
 
 	@Test
 	public void Register_06_ConfirmPassword() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");

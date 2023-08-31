@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import nopcommerce.HomePageUI;
+import pageUIs.nopCommerce.user.HomePageUI;
 
 public class BasePageFactory {
 	protected void waitForElementVisible(WebDriver driver, WebElement element) {

@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 import com.beust.jcommander.Parameter;
 
 import commons.BaseTest;
-import nopcommerce.HomePageUI;
-import pageObjects.HomePageObject;
-import pageObjects.LoginPageObject;
-import pageObjects.RegisterPageObject;
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserLoginPageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
+import pageUIs.nopCommerce.user.HomePageUI;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -27,9 +27,9 @@ import org.testng.annotations.AfterClass;
 
 public class Level_03_Page_Objects_02_Login extends BaseTest {
 	WebDriver driver;
-	HomePageObject homePage;
-	LoginPageObject loginPage;
-	RegisterPageObject registerPage;
+	UserHomePageObject homePage;
+	UserLoginPageObject loginPage;
+	UserRegisterPageObject registerPage;
 	String validPassword;
 	String firstName;
 	String lastName;
@@ -42,7 +42,7 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName);
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		firstName = "Automation";
 		lastName = "FC";
 		invalidEmail = "afc@afc.com@.vn";
@@ -53,8 +53,8 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 		// loginPage = new LoginPageObject(driver);
 		// registerPage = new RegisterPageObject(driver);
 
-		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		homePage.openRegisterPage();
+		registerPage = new UserRegisterPageObject(driver);
 		registerPage.senkeysToFirstNameTextbox(firstName);
 		registerPage.senkeysToLastNameTextbox(lastName);
 		registerPage.senkeysToEmailTextbox(exittingEmail);
@@ -65,13 +65,13 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
 		// registerPage.clickToLogoutLink();
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 	}
 
 	@Test
 	public void Login_01_EmptyData() throws InterruptedException {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.clickToLoginButton();
 		Thread.sleep(5000);
 		Assert.assertEquals(loginPage.getEmailErrorMessageTextbox(), "Please enter your email");
@@ -79,8 +79,8 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 	@Test
 	public void Login_02_InvalidEmail() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendkeysEmailTextbox("thi.hoang");
 		loginPage.clickToLoginButton();
 
@@ -89,8 +89,8 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 	@Test
 	public void Login_03_UnredisteredEmail() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 
 		loginPage.sendkeysEmailTextbox("thihoang1122334@gmail.com");
 
@@ -101,8 +101,8 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 	@Test
 	public void Login_04_EmptyPassword() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendkeysEmailTextbox(exittingEmail);
 		loginPage.clickToLoginButton();
 		Assert.assertEquals(loginPage.getErrorMessageUnsuccessfulLogin(), "Login was unsuccessful. Please correct the errors and try again.\nThe credentials provided are incorrect");
@@ -111,8 +111,8 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 	@Test
 	public void Login_05_WrongPassword() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendkeysEmailTextbox(exittingEmail);
 		loginPage.sendkeysPasswordTextbox(inValidPassword);
 		loginPage.clickToLoginButton();
@@ -122,12 +122,12 @@ public class Level_03_Page_Objects_02_Login extends BaseTest {
 
 	@Test
 	public void Login_06_ValidLogin() {
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		homePage.openLoginPage();
+		loginPage = new UserLoginPageObject(driver);
 		loginPage.sendkeysEmailTextbox(exittingEmail);
 		loginPage.sendkeysPasswordTextbox(validPassword);
 		loginPage.clickToLoginButton();
-		homePage = new HomePageObject(driver);
+		homePage = new UserHomePageObject(driver);
 		Assert.assertTrue(homePage.isLogoutLinkDisplayed());
 
 	}

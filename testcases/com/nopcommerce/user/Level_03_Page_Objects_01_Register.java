@@ -1,8 +1,10 @@
 package com.nopcommerce.user;
 
 import org.testng.annotations.Test;
-import pageObjects.HomePageObject;
-import pageObjects.RegisterPageObject;
+
+import pageObjects.nopCommerce.user.UserHomePageObject;
+import pageObjects.nopCommerce.user.UserRegisterPageObject;
+
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -13,8 +15,8 @@ import org.testng.annotations.AfterClass;
 
 public class Level_03_Page_Objects_01_Register {
 	WebDriver driver;
-	HomePageObject homePage;
-	RegisterPageObject registerPage;
+	UserHomePageObject homePage;
+	UserRegisterPageObject registerPage;
 	String emailAdress;
 	String inValidEmailAdress;
 	String projectPath = System.getProperty("user.dir");
@@ -23,8 +25,8 @@ public class Level_03_Page_Objects_01_Register {
 	public void beforeClass() {
 		System.setProperty("webdriver.gecko.driver", projectPath + ".\\browserDrivers\\geckodriver.exe");
 		driver = new FirefoxDriver();
-		homePage = new HomePageObject(driver);
-		registerPage = new RegisterPageObject(driver);
+		homePage = new UserHomePageObject(driver);
+		registerPage = new UserRegisterPageObject(driver);
 		emailAdress = "automation" + generateFakeNumber() + "@gmail.com";
 		inValidEmailAdress = "automation@abc@om";
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -33,7 +35,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@Test
 	public void Register_01_EmptyData() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		registerPage.clickToRegisterButton();
 		Assert.assertEquals(registerPage.getErorMessageAtFirstNameTextbox(), "First name is required.");
 		Assert.assertEquals(registerPage.getErorMessageAtLastNameTextbox(), "Last name is required.");
@@ -44,7 +46,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@Test
 	public void Register_02_InvalidEmail() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -61,7 +63,7 @@ public class Level_03_Page_Objects_01_Register {
 	@Test
 	public void Register_03_ValidEmail() {
 		
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -76,7 +78,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@Test
 	public void Register_04_Email_Exit() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -91,7 +93,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@Test
 	public void Register_05_PasswordLessThan6Character() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
@@ -105,7 +107,7 @@ public class Level_03_Page_Objects_01_Register {
 
 	@Test
 	public void Register_06_ConfirmPassword() {
-		homePage.clickToRegisterLink();
+		homePage.openRegisterPage();
 		
 		registerPage.senkeysToFirstNameTextbox("thi");
 		registerPage.senkeysToLastNameTextbox("hoang");
