@@ -6,27 +6,27 @@
 		<classes>
 			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
 		</classes>
-	</test>
+	</test>--> 
 
 	<test name="Run on Chrome">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
+			<class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_Login" />
 		</classes>
 	</test>
 
-	<test name="Run on edge">
+<!-- 	<test name="Run on edge">
 		<parameter name="browser" value="edge" />
 		<classes>
 			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
 		</classes>
-	</test>--> 
+	</test>
 
  <test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_08_Switch_Role_Login" />
+			<class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_Login" />
 		</classes>
-	</test>
+	</test>--> 
 
 </suite> 

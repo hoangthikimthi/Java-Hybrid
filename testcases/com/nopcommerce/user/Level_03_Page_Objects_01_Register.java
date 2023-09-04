@@ -8,6 +8,8 @@ import pageObjects.nopCommerce.user.UserRegisterPageObject;
 import org.testng.annotations.BeforeClass;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
@@ -124,7 +126,6 @@ public class Level_03_Page_Objects_01_Register {
 	public int generateFakeNumber() {
 		Random ran = new Random();
 		return ran.nextInt(9999);
-
 	}
 
 	@AfterClass
