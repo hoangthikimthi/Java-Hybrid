@@ -1,6 +1,6 @@
 package javaBasic;
 
-public class Topic_05_Reference {
+public class Topic_05_Reference_Casting {
 public String studentName;
 	public String getStudentName() 
 	 {
@@ -16,8 +16,8 @@ public String studentName;
 	}
 	
 	public static void main(String[] args) {
-		Topic_05_Reference firstStudent = new Topic_05_Reference();
-		Topic_05_Reference secondStudent = new Topic_05_Reference();
+		Topic_05_Reference_Casting firstStudent = new Topic_05_Reference_Casting();
+		Topic_05_Reference_Casting secondStudent = new Topic_05_Reference_Casting();
 		
 		firstStudent.SetStudentName("HaNoi");
 		secondStudent.SetStudentName("HCM");
