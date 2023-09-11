@@ -64,6 +64,7 @@ public class CarOOP {
 		System.out.println("car car Price = " + getCarPrice());
 	}
 
+	// thay vì gán vào từng hàm set cho các đối tượng, thì gán luôn vào hàm khởi tạo
 	public static void main(String[] args) {
 		CarOOP honda = new CarOOP("a", "b", "c", 200f, 50000d);
 	}
