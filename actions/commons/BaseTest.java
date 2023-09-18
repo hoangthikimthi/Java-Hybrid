@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import javaOOP.BrowserList;
 import javaOOP.ServerList;
@@ -29,7 +30,7 @@ public class BaseTest {
 			driver = WebDriverManager.edgedriver().create();
 			break;
 		default:
-			throw new RuntimeException("please enter the correct Browser name!");
+			throw new BrowserNotSupport(browserName);
 		}
 		driver.manage().window().setPosition(new Point(0, 0));
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
