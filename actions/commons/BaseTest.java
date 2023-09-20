@@ -14,8 +14,8 @@ import javaOOP.BrowserList;
 import javaOOP.ServerList;
 
 public class BaseTest {
-	WebDriver driver;
-	String projectPath = System.getProperty("user.dir");
+	private WebDriver driver;
+	protected String projectPath = System.getProperty("user.dir");
 
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
@@ -36,6 +36,28 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(GlobalConstants.USER_PAGE_URL);
+		return driver;
+	}
+
+	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
+		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
+		switch (browser) {
+		case FIREFOX:
+			driver = WebDriverManager.firefoxdriver().create();
+			break;
+		case CHROME:
+			driver = WebDriverManager.chromedriver().create();
+			break;
+		case EDGE:
+			driver = WebDriverManager.edgedriver().create();
+			break;
+		default:
+			throw new BrowserNotSupport(browserName);
+		}
+
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(appUrl);
 		return driver;
 	}
 
