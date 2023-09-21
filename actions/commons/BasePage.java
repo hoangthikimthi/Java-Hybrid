@@ -173,12 +173,12 @@ public class BasePage {
 
 	protected void selectItemInDefautDropdown(WebDriver driver, String locatorType, String textValue) {
 		Select select = new Select(getWebElement(driver, locatorType));
-		select.selectByValue(textValue);
+		select.selectByVisibleText(textValue);
 	}
 
 	public void selectItemInDefautDropdown(WebDriver driver, String locatorType, String textValue, String... dynamicValue) {
 		Select select = new Select(getWebElement(driver, getDynamicXpath(locatorType, dynamicValue)));
-		select.selectByValue(textValue);
+		select.selectByVisibleText(textValue);
 	}
 
 	protected void getSelectedItemInDefaultDropdown(WebDriver driver, String locatorType, String textValue) {
@@ -235,8 +235,15 @@ public class BasePage {
 		return getListElement(driver, getDynamicXpath(locatorType, dynamicValue)).size();
 	}
 
-	protected void checktoDefaulCheckboxRadio(WebDriver driver, String locatorType) {
+	protected void checktoDefaulCheckboxOrRadio(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
+		if (!element.isSelected()) {
+			element.click();
+		}
+	}
+
+	public void checktoDefaulCheckboxOrRadio(WebDriver driver, String locatorType, String... dynamicValue) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValue));
 		if (!element.isSelected()) {
 			element.click();
 		}
@@ -244,6 +251,13 @@ public class BasePage {
 
 	protected void unChecktoDefaulCheckboxRadio(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
+		if (element.isSelected()) {
+			element.click();
+		}
+	}
+
+	public void unChecktoDefaulCheckboxRadio(WebDriver driver, String locatorType, String... dynamicValue) {
+		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValue));
 		if (element.isSelected()) {
 			element.click();
 		}
@@ -358,7 +372,7 @@ public class BasePage {
 		}
 	}
 
-	protected void sleepInSecond(long time) {
+	public void sleepInSecond(long time) {
 		try {
 			Thread.sleep(time * 1000);
 		} catch (InterruptedException e) {

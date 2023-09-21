@@ -57,7 +57,7 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		homePage.enterToHeaderTextboxByLabel("Total", "553353");
 	}
 
-	@Test
+	// @Test
 	public void Table_03_getAllRowValue() {
 		// doc du lieu cu file country.txt ra
 		// luu vao 1 List<String> = Expected value
@@ -66,6 +66,29 @@ public class Level_10_DataTable_DataGrid extends BaseTest {
 		actualAllCountryValues = homePage.getValueEachRowAtAllPage();
 
 		// Assert.assertEquals(actualAllCountryValues, expectedAllCountryValues);
+	}
+
+	@Test
+	public void Table_04_getAllRowValue() {
+		homePage.clickToLoadButton();
+		homePage.sleepInSecond(2);
+		homePage.enterToTextboxByColumNameAtRowNumber("Company", "1", "IMIP");
+		homePage.enterToTextboxByColumNameAtRowNumber("Contact Person", "1", "Thi");
+
+		homePage.enterToDropdownByColumNameAtRowNumber("Country", "1", "Hong Kong");
+
+		homePage.checkToCheckBoxByColumnNameAtRowNumber("NPO?", "2");
+
+		homePage.unCheckToCheckBoxByColumnNameAtRowNumber("NPO?", "1");
+
+		homePage.clickToIconByRowNumber("1", "Insert Row Above");
+		homePage.sleepInSecond(2);
+		homePage.clickToIconByRowNumber("1", "Remove Current Row");
+		homePage.sleepInSecond(2);
+		homePage.clickToIconByRowNumber("1", "Move Down");
+		homePage.sleepInSecond(2);
+		homePage.clickToIconByRowNumber("1", "Move Up");
+
 	}
 
 	@AfterClass
