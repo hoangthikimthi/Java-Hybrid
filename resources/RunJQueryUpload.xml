@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite  name="Nopcommerce">
+<suite  name="JQuery-File_Upload">
 	<parameter name="url" value="https://blueimp.github.io/jQuery-File-Upload/" />
  <test name="Run on chrome">
-		<parameter name="browser" value="FIREFOX" />
+		<parameter name="browser" value="CHROME" />
 		<classes>
-			<class name="com.jquery.dataable.Level_10_DataTable_DataGrid" />
+			<class name="com.jquery.Level_11_Upload_Files" />
 		</classes>
 	</test>
 

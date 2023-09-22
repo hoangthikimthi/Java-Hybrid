@@ -1,4 +1,4 @@
-package pageObject.jQuery;
+package pageObject.jQuery.datatable;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import PageUI.jQuery.HomePageUI;
+import PageUI.jQuery.datatable.HomePageUI;
 import commons.BasePage;
 
 public class HomePageObject extends BasePage {

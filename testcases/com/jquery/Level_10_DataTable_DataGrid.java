@@ -1,4 +1,4 @@
-package com.jquery.dataable;
+package com.jquery;
 
 import static org.testng.Assert.assertTrue;
 
@@ -12,8 +12,8 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import pageObject.jQuery.HomePageObject;
-import pageObject.jQuery.PageGeneratorManager;
+import pageObject.jQuery.datatable.HomePageObject;
+import pageObject.jQuery.datatable.PageGeneratorManager;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserRegisterPageObject;
