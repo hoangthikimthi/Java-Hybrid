@@ -1,32 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Nopcommerce">
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
 
- <test name="Run on FIREFOX">
+
+	<test name="Run on FIREFOX">
 		<parameter name="browser" value="FIREFOX" />
 		<classes>
-			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
-		</classes>
-	</test>--> 
-
-	<test name="Run on Chrome">
-		<parameter name="browser" value="CHROME" />
-		<classes>
-			<class name="com.nopcommerce.user.Level_09_Dynamic_Locator" />
+			<class
+				name="com.nopcommerce.user.Level_14_Log_Report" />
 		</classes>
 	</test>
-
- 	<test name="Run on edge">
-		<parameter name="browser" value="EDGE" />
-		<classes>
-			<class name="com.nopcommerce.user.Level_04_Register_MutilBrowser" />
-		</classes>
-	</test>
-
- <test name="Run on FIREFOX">
-		<parameter name="browser" value="FIREFOX" />
-		<classes>
-			<class name="com.nopcommerce.user.Level_06_Page_Generator_Manager_Login" />
-		</classes>
-	</test>--> 
 
 </suite> 

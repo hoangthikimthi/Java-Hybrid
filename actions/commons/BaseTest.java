@@ -87,46 +87,45 @@ public class BaseTest {
 	}
 
 	protected boolean verifyTrue(boolean condition) {
-		boolean pass = true;
+		boolean status = true;
 		try {
 			Assert.assertTrue(condition);
-			log.info("--------------PASSED-------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
-			log.info("--------------FAILED-------------");
-			pass = false;
-
+			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
+			log.info("---------------------- Failed -----------------------");
 		}
-		return pass;
+		return status;
 	}
 
 	protected boolean verifyFalse(boolean condition) {
-		boolean pass = true;
+		boolean status = true;
 		try {
 			Assert.assertFalse(condition);
-			log.info("--------------PASSED-------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
-			log.info("--------------FAILED-------------");
-			pass = false;
+			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
+			log.info("---------------------- Failed -----------------------");
 		}
-		return pass;
+		return status;
 	}
 
 	protected boolean verifyEquals(Object actual, Object expected) {
-		boolean pass = true;
+		boolean status = true;
 		try {
 			Assert.assertEquals(actual, expected);
-			log.info("--------------PASSED-------------");
+			log.info("---------------------- Passed -----------------------");
 		} catch (Throwable e) {
-			log.info("--------------FAILED-------------");
-			pass = false;
+			status = false;
 			VerificationFailures.getFailures().addFailureForTest(Reporter.getCurrentTestResult(), e);
 			Reporter.getCurrentTestResult().setThrowable(e);
+			log.info("---------------------- Failed -----------------------");
 		}
-		return pass;
+		return status;
 	}
 
 	public void sleepInSecond(long time) {
