@@ -70,6 +70,10 @@ public class BaseTest {
 		return driver;
 	}
 
+	public WebDriver getDriverInstance() {
+		return this.driver;
+	}
+
 	protected String getEnviromentValue(String serverName) {
 		String envUrl = null;
 		ServerList server = ServerList.valueOf(serverName.toUpperCase());

@@ -1,8 +1,0 @@
-[2023-09-29 14:11:44,495 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 01: Navigate to 'Register' page
-[2023-09-29 14:11:47,146 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
-[2023-09-29 14:11:47,230 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 03: Enter lastName textbox with value is 'FC'
-[2023-09-29 14:11:47,321 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc3732@mail.vn'
-[2023-09-29 14:11:47,414 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
-[2023-09-29 14:11:47,505 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
-[2023-09-29 14:11:47,580 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 07: Click to register button
-[2023-09-29 14:11:48,576 INFO com.nopcommerce.user.Level_14_Log_Report] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
