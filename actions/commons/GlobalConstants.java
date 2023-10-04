@@ -19,6 +19,8 @@ public class GlobalConstants {
 
 	public static final String AUTO_IT_SCRIPT = PROJECT_PATH + File.separator + "autoIT";
 
+	public static final String JAVA_VERSION = System.getProperty("java.version");
+
 	public static final String REPORT_SCREENSHOT = PROJECT_PATH + File.separator + "reportNGImages" + File.separator;
 	public static final String EXTENT_PATH = PROJECT_PATH + File.separator + "ExtentReportV2" + File.separator;
 
