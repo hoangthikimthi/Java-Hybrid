@@ -11,4 +11,8 @@ public class BasePageNopCommerceUI {
 	public static final String LOGOUT_LINK_AS_ADMIN = "xpath=//a[text()='Logout']";
 
 	public static final String DYNAMIC_MY_ACCOUNT_LINK = "xpath=//div[contains(@class,'account-navigation')]//a[text()='%s']";
+
+	public static final String DYNAMIC_TEXBOX_ID = "xpath=//input[@id='%s']";
+	public static final String DYNAMIC_BUTTON_TEXT = "xpath=//button[text()='%s']";
+	public static final String DYNAMIC_TEXTBOX_VALUE = "xpath=//input[@id='%s']";
 }

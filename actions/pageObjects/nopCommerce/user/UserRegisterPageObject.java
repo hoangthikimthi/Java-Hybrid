@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import commons.BasePage;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Step;
+import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 import pageUIs.nopCommerce.user.HomePageUI;
 import pageUIs.nopCommerce.user.RegisterPageUI;
 

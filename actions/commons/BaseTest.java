@@ -1,6 +1,7 @@
 package commons;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -37,13 +38,16 @@ public class BaseTest {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
 		case FIREFOX:
-			driver = WebDriverManager.firefoxdriver().create();
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 			break;
 		case CHROME:
-			driver = WebDriverManager.chromedriver().create();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 			break;
 		case EDGE:
-			driver = WebDriverManager.edgedriver().create();
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 			break;
 		default:
 			throw new BrowserNotSupport(browserName);
@@ -59,13 +63,16 @@ public class BaseTest {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
 		case FIREFOX:
-			driver = WebDriverManager.firefoxdriver().create();
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 			break;
 		case CHROME:
-			driver = WebDriverManager.chromedriver().create();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
 			break;
 		case EDGE:
-			driver = WebDriverManager.edgedriver().create();
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
 			break;
 		default:
 			throw new BrowserNotSupport(browserName);
@@ -161,6 +168,55 @@ public class BaseTest {
 			}
 		} catch (Exception e) {
 			System.out.print(e.getMessage());
+		}
+	}
+
+	protected void closeBrowserDriver() {
+		String cmd = null;
+		try {
+			String osName = System.getProperty("os.name").toLowerCase();
+			log.info("OS name = " + osName);
+
+			String driverInstanceName = driver.toString().toLowerCase();
+			log.info("Driver instance name = " + driverInstanceName);
+
+			String browserDriverName = null;
+
+			if (driverInstanceName.contains("chrome")) {
+				browserDriverName = "chromedriver";
+			} else if (driverInstanceName.contains("internetexplorer")) {
+				browserDriverName = "IEDriverServer";
+			} else if (driverInstanceName.contains("firefox")) {
+				browserDriverName = "geckodriver";
+			} else if (driverInstanceName.contains("edge")) {
+				browserDriverName = "msedgedriver";
+			} else if (driverInstanceName.contains("opera")) {
+				browserDriverName = "operadriver";
+			} else {
+				browserDriverName = "safaridriver";
+			}
+
+			if (osName.contains("window")) {
+				cmd = "taskkill /F /FI \"IMAGENAME eq " + browserDriverName + "*\"";
+			} else {
+				cmd = "pkill " + browserDriverName;
+			}
+
+			if (driver != null) {
+				driver.manage().deleteAllCookies();
+				driver.quit();
+			}
+		} catch (Exception e) {
+			log.info(e.getMessage());
+		} finally {
+			try {
+				Process process = Runtime.getRuntime().exec(cmd);
+				process.waitFor();
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }

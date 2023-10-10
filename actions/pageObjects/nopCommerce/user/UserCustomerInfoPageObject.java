@@ -13,7 +13,6 @@ public class UserCustomerInfoPageObject extends BasePage {
 	}
 
 	public boolean isCustomerInfoPageDisplayed() {
-
 		waitForElementInVisible(driver, CustomerInfoPageUI.MY_ACCOUNT_TITLE);
 		return isElementDisplayed(driver, CustomerInfoPageUI.MY_ACCOUNT_TITLE);
 	}

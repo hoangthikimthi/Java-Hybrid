@@ -46,3 +46,103 @@
 [2023-10-02 15:08:39,002 INFO com.nopcommerce.user.Level_15_Report2_TestNG] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
 [2023-10-02 15:08:39,082 INFO com.nopcommerce.user.Level_15_Report2_TestNG] - Register - Steps 07: Click to register button
 [2023-10-02 15:08:39,772 INFO com.nopcommerce.user.Level_15_Report2_TestNG] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-09 15:13:00,741 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:13:04,281 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-09 15:13:11,272 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-09 15:14:53,613 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:14:54,745 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-09 15:15:00,559 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-09 15:16:23,880 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:16:25,206 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-09 15:16:28,331 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-09 15:22:49,031 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:23:50,857 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:23:51,983 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-09 15:23:55,094 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-09 15:23:55,465 INFO com.nopcommerce.user.Level_16_ShareData_2] - ---------------------- Passed -----------------------
+[2023-10-09 15:24:51,114 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-09 15:24:52,176 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-09 15:24:55,307 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-09 15:24:55,684 INFO com.nopcommerce.user.Level_16_ShareData_2] - ---------------------- Passed -----------------------
+[2023-10-10 09:45:57,759 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-10 09:45:59,027 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-10 09:46:03,537 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-10 09:46:03,606 INFO com.nopcommerce.user.Level_16_ShareData_2] - ---------------------- Passed -----------------------
+[2023-10-10 09:47:30,210 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step1: Navigate to Login Page
+[2023-10-10 09:47:31,374 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step2: Set cookies and reload page
+[2023-10-10 09:47:36,159 INFO com.nopcommerce.user.Level_16_ShareData_2] - Pre-condition-Step3: Verify Logout Link
+[2023-10-10 09:47:36,242 INFO com.nopcommerce.user.Level_16_ShareData_2] - ---------------------- Passed -----------------------
+[2023-10-10 11:00:24,434 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 11:00:25,433 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 11:00:25,517 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 11:00:25,606 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc4547@mail.vn'
+[2023-10-10 11:00:25,687 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 11:00:25,778 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 11:00:25,854 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 07: Click to register button
+[2023-10-10 11:00:26,497 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 11:00:26,621 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - OS name = windows 11
+[2023-10-10 11:00:26,621 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Driver instance name = firefoxdriver: firefox on windows (5c92b2eb-64cb-4125-b955-cd9e95f9620e)
+[2023-10-10 11:00:53,791 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 11:00:54,850 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 11:00:54,939 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 11:00:55,014 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc4641@mail.vn'
+[2023-10-10 11:00:55,095 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 11:00:55,169 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 11:00:55,245 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 07: Click to register button
+[2023-10-10 11:00:56,009 INFO com.nopcommerce.user.Level_17_Custom_Close_Browser] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 15:32:05,943 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 15:32:06,989 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 15:32:07,083 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 15:32:07,172 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc9163@mail.vn'
+[2023-10-10 15:32:07,259 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 15:32:07,335 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 15:32:07,408 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 15:32:08,065 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 15:59:41,919 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 15:59:42,946 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 15:59:43,031 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 15:59:43,119 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc4164@mail.vn'
+[2023-10-10 15:59:43,212 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 15:59:43,285 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 15:59:43,365 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 15:59:44,240 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 16:38:34,303 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 16:38:35,383 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 16:38:35,460 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 16:38:35,542 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc4050@mail.vn'
+[2023-10-10 16:38:35,634 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 16:38:35,707 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 16:38:35,787 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 16:38:36,439 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:32:15,951 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 17:32:16,979 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:32:17,065 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 17:32:17,155 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc8386@mail.vn'
+[2023-10-10 17:32:17,238 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:32:17,323 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:32:17,401 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 17:32:18,100 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:35:09,258 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 17:35:10,230 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:35:10,313 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 17:35:10,396 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc9524@mail.vn'
+[2023-10-10 17:35:10,480 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:35:10,575 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:35:10,655 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 17:35:11,394 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:37:50,458 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 17:37:51,544 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:37:51,634 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 17:37:51,720 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc2907@mail.vn'
+[2023-10-10 17:37:51,799 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:37:51,876 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:37:51,953 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 17:37:52,645 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:39:19,445 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
+[2023-10-10 17:39:21,464 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
+[2023-10-10 17:39:21,563 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
+[2023-10-10 17:39:21,645 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc9214@mail.vn'
+[2023-10-10 17:39:21,721 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:39:21,797 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
+[2023-10-10 17:39:21,880 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
+[2023-10-10 17:39:22,594 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
