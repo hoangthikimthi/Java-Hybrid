@@ -146,3 +146,134 @@
 [2023-10-10 17:39:21,797 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
 [2023-10-10 17:39:21,880 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
 [2023-10-10 17:39:22,594 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-17 10:02:39,043 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 10:02:39,111 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 10:04:27,451 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 10:04:27,577 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 10:36:49,766 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 10:36:49,825 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 10:51:57,319 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 10:51:57,378 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 11:08:10,370 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 11:08:10,434 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 11:23:29,596 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 11:23:29,653 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 11:24:56,222 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 11:24:56,322 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 11:27:51,360 INFO com.nopcommerce.user.Practice_01_MyAccount] - Pre-condition-Step3: Verify Logout Link
+[2023-10-17 11:27:51,420 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 11:46:19,851 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 14:41:03,065 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 14:41:05,069 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:10:10,499 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:26,661 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:28,440 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:28,502 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:28,590 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:28,651 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:13:28,715 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Failed -----------------------
+[2023-10-17 15:13:28,776 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Failed -----------------------
+[2023-10-17 15:20:46,081 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:47,898 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:47,958 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:48,022 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:48,081 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:48,146 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:20:48,221 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Failed -----------------------
+[2023-10-17 15:21:58,704 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,449 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,510 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,572 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,649 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,711 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:22:00,774 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Failed -----------------------
+[2023-10-17 15:38:58,959 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:00,843 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:00,902 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:00,963 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:01,025 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:01,087 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:39:01,150 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:50,349 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:51,888 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:51,949 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:52,012 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:52,073 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:52,135 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:52,200 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:53:52,207 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 15:53:52,207 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (077862fed3ab1550dd8775e4f2218f65)
+[2023-10-17 15:54:14,928 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,663 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,722 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,788 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,846 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,909 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,968 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:54:16,972 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 15:54:16,972 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = firefoxdriver: firefox on windows (477be5e2-f0de-4814-8b78-902c13195da0)
+[2023-10-17 15:55:03,684 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,465 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,528 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,591 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,657 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,717 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,792 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:55:05,795 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 15:55:05,796 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = edgedriver: msedge on windows (24dbf84f08fd52d50c382c55acb99e16)
+[2023-10-17 15:58:09,660 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,334 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,393 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,455 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,520 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,584 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,644 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:11,653 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 15:58:11,653 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (f8a94a50a008a8381a6cc217c14e911c)
+[2023-10-17 15:58:55,630 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,340 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,400 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,462 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,527 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,590 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,669 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 15:58:57,678 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 15:58:57,679 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (ab46ffc9c82ed5fb5c2bc650bdeddfd4)
+[2023-10-17 16:00:44,383 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,090 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,151 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,214 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,290 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,351 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,431 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:00:46,436 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 16:00:46,436 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (4f3e1cbab7a24deadaa7b7a5ae4927b5)
+[2023-10-17 16:35:07,522 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,328 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,394 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,468 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,530 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,592 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,658 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:35:09,711 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 16:35:09,711 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (b2655f1dc022e46345b85c66e12e6a39)
+[2023-10-17 16:47:46,195 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:47,934 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:47,997 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:48,059 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:48,118 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:48,181 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:48,246 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 16:47:48,295 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 16:47:48,295 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (6208106117d343046413b88463b1a894)
+[2023-10-17 17:00:06,742 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,513 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,572 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,634 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,698 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,759 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,822 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-17 17:00:08,872 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 17:00:08,872 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (9d85d8ddb75b96d69e2e6e12326c7fc7)
+[2023-10-17 17:04:01,251 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 17:04:01,252 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (c1bbe876ea94bdf3b7d5716f2349845f)

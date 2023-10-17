@@ -1,8 +1,2 @@
-[2023-10-10 17:39:19,445 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 01: Navigate to 'Register' page
-[2023-10-10 17:39:21,464 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 02: Enter Firstname textbox with value is 'Automation'
-[2023-10-10 17:39:21,563 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 03: Enter lastName textbox with value is 'FC'
-[2023-10-10 17:39:21,645 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 04: Enter exittingEmail textbox with value is 'afc9214@mail.vn'
-[2023-10-10 17:39:21,721 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 05: Enter validPassword textbox with value is '12345a'
-[2023-10-10 17:39:21,797 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 06: Enter validPassword textbox with value is '12345a'
-[2023-10-10 17:39:21,880 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 07: Click to register button
-[2023-10-10 17:39:22,594 INFO com.nopcommerce.user.Level_18_Pattern_Object] - Register - Steps 08: Enter Firstname textbox with value is 'Automation'
+[2023-10-17 17:04:01,251 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-17 17:04:01,252 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (c1bbe876ea94bdf3b7d5716f2349845f)

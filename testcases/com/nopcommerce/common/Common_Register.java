@@ -26,6 +26,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 
 public class Common_Register extends BaseTest {
@@ -45,10 +46,6 @@ public class Common_Register extends BaseTest {
 		emailAddress = "afc" + generateFakeNumber() + "@mail.vn";
 		password = "12345a";
 
-	}
-
-	@Test
-	public void Login_01_register() {
 		log.info("Register - Steps 01: Navigate to 'Register' page");
 		homePage.openRegisterPage();
 		registerPage = homePage.openRegisterPage();
@@ -82,16 +79,8 @@ public class Common_Register extends BaseTest {
 
 	}
 
-	public void sleepInSecond(long timeInSecond) {
-		try {
-			Thread.sleep(timeInSecond * 1000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-	}
-
-	@AfterTest()
-	public void afterClass() {
+	@AfterTest
+	public void closedriver() {
 		driver.quit();
 	}
 

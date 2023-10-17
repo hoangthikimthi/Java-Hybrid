@@ -75,6 +75,7 @@ public class Level_08_Switch_Role_Login extends BaseTest {
 		// login as User role
 		userHomePage = userLoginPage.loginAsUser(userEmailAddress, userPassword);
 		Assert.assertTrue(userHomePage.isLogoutLinkDisplayed());
+
 	}
 
 	public void sleepInSecond(long timeInSecond) {

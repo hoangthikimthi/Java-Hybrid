@@ -76,7 +76,7 @@ public class Common_Register_Cookie extends BaseTest {
 
 		log.info("Register - Steps 08: Enter Firstname textbox with value is '" + firstName + "'");
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-
+		sleepInSecond(2);
 		loginPage = homePage.openLoginPage();
 		loginPage.sendkeysEmailTextbox(emailAddress);
 		loginPage.sendkeysPasswordTextbox(password);
@@ -103,9 +103,9 @@ public class Common_Register_Cookie extends BaseTest {
 		}
 	}
 
-	@AfterTest
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		driver.quit();
+		closeBrowserDriver();
 	}
 
 }

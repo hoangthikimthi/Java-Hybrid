@@ -30,7 +30,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class Level_16_ShareData_2 extends BaseTest {
+public class Level_16_ShareData_2_Cookies extends BaseTest {
 	WebDriver driver;
 	UserHomePageObject homePage;
 	UserLoginPageObject loginPage;

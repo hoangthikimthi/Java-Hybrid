@@ -15,4 +15,7 @@ public class BasePageNopCommerceUI {
 	public static final String DYNAMIC_TEXBOX_ID = "xpath=//input[@id='%s']";
 	public static final String DYNAMIC_BUTTON_TEXT = "xpath=//button[text()='%s']";
 	public static final String DYNAMIC_TEXTBOX_VALUE = "xpath=//input[@id='%s']";
+
+	public static final String DYNAMIC_RADIO_ID = "xpath=//input[@id='%s']";
+	public static final String MESSAGE_TEXT = "xpath=//p[text()='%s']";
 }

@@ -158,6 +158,10 @@ public class BasePage {
 		return driver.findElement(getByLocator(locatorType));
 	}
 
+	public WebElement getWebElement(WebDriver driver, String locatorType, String... dynamicValue) {
+		return driver.findElement(getByLocator(locatorType));
+	}
+
 	public void clickToElement(WebDriver driver, String locatorType) {
 		getWebElement(driver, locatorType).click();
 	}
@@ -220,6 +224,12 @@ public class BasePage {
 	public String getTextboxValueByID(WebDriver driver, String textboxID) {
 		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_VALUE, textboxID);
 		return getElementAtribute(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_VALUE, "value", textboxID);
+
+	}
+
+	public String getRadioButtonValueByID(WebDriver driver, String textboxID) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_ID, textboxID);
+		return getElementAtribute(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_ID, "value", textboxID);
 
 	}
 
@@ -322,6 +332,17 @@ public class BasePage {
 		}
 	}
 
+	/**
+	 * Click to Radio button
+	 * 
+	 * @param driver
+	 * @param radioButtonID
+	 */
+	public void clickToRadioButtonByID(WebDriver driver, String radioButtonID) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_ID, radioButtonID);
+		checktoDefaulCheckboxOrRadio(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_ID, radioButtonID);
+	}
+
 	public void unChecktoDefaulCheckboxRadio(WebDriver driver, String locatorType) {
 		WebElement element = getWebElement(driver, locatorType);
 		if (element.isSelected()) {
@@ -342,6 +363,18 @@ public class BasePage {
 
 	public boolean isElementDisplayed(WebDriver driver, String locatorType, String... dynamicValue) {
 		return getWebElement(driver, getDynamicXpath(locatorType, dynamicValue)).isDisplayed();
+	}
+
+	/**
+	 * Check success meassage is display
+	 * 
+	 * @param driver
+	 * @param dynamicValue
+	 * @return
+	 */
+	public boolean isSuccessMessageDisplayed(WebDriver driver, String dynamicValue) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.MESSAGE_TEXT, dynamicValue);
+		return isElementDisplayed(driver, BasePageNopCommerceUI.MESSAGE_TEXT, dynamicValue);
 	}
 
 	public boolean isElementEnable(WebDriver driver, String locatorType) {
