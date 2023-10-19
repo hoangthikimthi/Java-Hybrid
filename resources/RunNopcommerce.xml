@@ -18,21 +18,5 @@
 		</classes>
 	</test>
 
-	<test name="Run on firefox" preserve-oder="true">
-		<parameter name="browser" value="FIREFOX" />
-		<classes>
-			<class name="com.nopcommerce.common.Common_Register" />
-			<class name="com.nopcommerce.user.Practice_01_MyAccount" />
-		
-		</classes>
-	</test>
-	
-	<test name="Run on edge" preserve-oder="true">
-		<parameter name="browser" value="EDGE" />
-		<classes>
-			<class name="com.nopcommerce.common.Common_Register" />
-			<class name="com.nopcommerce.user.Practice_01_MyAccount" />
-		
-		</classes>
-	</test>
+
 </suite> 

@@ -99,6 +99,24 @@ public class Level_07_Switch_Page_Login extends BaseTest {
 	}
 
 	@Test
+	public void User_05_SwitchPage() {
+		// customer Info -> Address
+		addressPage = customerInfoPage.openAddressPage(driver);
+		// Address -> My Product Review
+		myProductReviewPage = addressPage.openMyProductReviewPage(driver);
+		// My Product Review -> Reward Point
+		rewardPointPage = (UserRewardPointPageObject) myProductReviewPage.openMyAccountPageByPageName(driver, "Reward points");
+		// Reward Point -> Address
+		addressPage = (UserAddressPageObject) rewardPointPage.openMyAccountPageByPageName(driver, "Addresses");
+		// Address -> Reward Point
+		rewardPointPage = (UserRewardPointPageObject) addressPage.openMyAccountPageByPageName(driver, "Reward points");
+		// Reward Point -> My Product Review
+		myProductReviewPage = (UserMyProductReviewPageObject) rewardPointPage.openMyAccountPageByPageName(driver, "My product reviews");
+		// My product review -> address
+		addressPage = (UserAddressPageObject) myProductReviewPage.openMyAccountPageByPageName(driver, "Addresses");
+	}
+
+	@Test
 	public void User_04_Switch_Role() {
 		// role user-> admin
 		// admin->user

@@ -277,3 +277,39 @@
 [2023-10-17 17:00:08,872 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (9d85d8ddb75b96d69e2e6e12326c7fc7)
 [2023-10-17 17:04:01,251 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
 [2023-10-17 17:04:01,252 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (c1bbe876ea94bdf3b7d5716f2349845f)
+[2023-10-19 11:04:38,159 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:39,864 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:39,927 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:39,990 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:40,051 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:40,113 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:40,176 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:41,051 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:04:41,818 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 11:04:41,818 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (a8cb26cc7124e31577989829fbefecf0)
+[2023-10-19 11:05:01,905 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,566 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,629 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,693 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,754 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,817 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:03,880 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:04,698 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:05,374 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 11:05:05,374 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = firefoxdriver: firefox on windows (475a657e-cd64-45c8-adf2-3b800e5ff8c7)
+[2023-10-19 11:05:32,434 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,236 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,303 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,360 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,423 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,482 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:34,544 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:35,401 INFO com.nopcommerce.user.Practice_01_MyAccount] - ---------------------- Passed -----------------------
+[2023-10-19 11:05:36,219 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 11:05:36,219 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = edgedriver: msedge on windows (1af43392c25080b12868d225f7824e1e)
+[2023-10-19 14:00:07,729 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 14:00:07,730 INFO com.nopcommerce.user.Practice_01_MyAccount] - 
+[2023-10-19 14:00:18,661 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 14:00:18,661 INFO com.nopcommerce.user.Practice_01_MyAccount] - 
+[2023-10-19 14:03:23,851 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 14:03:23,852 INFO com.nopcommerce.user.Practice_01_MyAccount] - 

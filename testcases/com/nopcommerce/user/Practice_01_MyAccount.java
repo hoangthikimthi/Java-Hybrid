@@ -14,6 +14,7 @@ import com.nopcommerce.common.Common_Register_Cookie;
 
 import commons.BaseTest;
 import commons.PageGeneratorManager;
+import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
@@ -25,6 +26,7 @@ public class Practice_01_MyAccount extends BaseTest {
 	UserLoginPageObject loginPage;
 	UserHomePageObject userHomePage;
 	UserCustomerInfoPageObject customerInfoPage;
+	UserAddressPageObject addressesPage;
 	String replaceEmail;
 
 	@Parameters("browser")
@@ -44,7 +46,7 @@ public class Practice_01_MyAccount extends BaseTest {
 	}
 
 	@Test
-	public void Login_01_CustomerInfo() {
+	public void MyAccount_01_UpdateCustomerInfo() {
 		customerInfoPage = homePage.clickToMyAccountLink();
 		customerInfoPage.clickToRadioButtonByID(driver, "gender-female");
 		customerInfoPage.sendkeysToTextboxByID(driver, "FirstName", "Automation");
@@ -58,6 +60,19 @@ public class Practice_01_MyAccount extends BaseTest {
 		verifyEquals(customerInfoPage.getTextboxValueByID(driver, "LastName"), "FC");
 		verifyEquals(customerInfoPage.getTextboxValueByID(driver, "Email"), replaceEmail);
 		verifyEquals(customerInfoPage.getTextboxValueByID(driver, "Company"), "Automationfc FC");
+
+	}
+
+	@Test
+	public void MyAccount_02_AddAdress() {
+		addressesPage = (UserAddressPageObject) customerInfoPage.openMyAccountPageByPageName(driver, "Addresses");
+		addressesPage.clickToButtonByText(driver, "Add new");
+		verifyTrue(addressesPage.isAddAddressFormDisplayed());
+		addressesPage.sendkeysToTextboxByID(driver, "Address_FirstName", "Automation");
+		addressesPage.sendkeysToTextboxByID(driver, "Address_LastName", "fc");
+		addressesPage.sendkeysToTextboxByID(driver, "Address_Email", "Automationfc.vn@gmail.com");
+		addressesPage.sendkeysToTextboxByID(driver, "Address_Company", "Automation");
+		addressesPage.selectContryInDropdown();
 
 	}
 

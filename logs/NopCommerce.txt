@@ -1,2 +1,2 @@
-[2023-10-17 17:04:01,251 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
-[2023-10-17 17:04:01,252 INFO com.nopcommerce.user.Practice_01_MyAccount] - Driver instance name = chromedriver: chrome on windows (c1bbe876ea94bdf3b7d5716f2349845f)
+[2023-10-19 14:03:23,851 INFO com.nopcommerce.user.Practice_01_MyAccount] - OS name = windows 11
+[2023-10-19 14:03:23,852 INFO com.nopcommerce.user.Practice_01_MyAccount] - 

@@ -70,18 +70,13 @@ public class Common_Register extends BaseTest {
 
 		log.info("Register - Steps 08: Enter Firstname textbox with value is '" + firstName + "'");
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
-
+		driver.quit();
 	}
 
 	public int generateFakeNumber() {
 		Random ran = new Random();
 		return ran.nextInt(9999);
 
-	}
-
-	@AfterTest
-	public void closedriver() {
-		driver.quit();
 	}
 
 }
