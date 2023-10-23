@@ -3,6 +3,7 @@ package pageUIs.nopCommerce.user;
 public class AddressPageUI {
 
 	public static final String FIRSTNAME_TEXTBOX = "CSS=input#Address_FirstName";
-	public static final String COUNTRY_DROPDOWN = "css=select#Address_CountryId";
-	public static final String DYNAMIC_COUNTRY_VALUE = "xpath=//select[@id='Address_CountryId']//option[text()='Viet Nam']";
+	public static final String DYNAMIC_ADRESS_DROPDOWN = "xpath=//select[@id='%s']";
+	public static final String INFO_AREA = "xpath=//ul[@class='info']";
+	public static final String DYNAMIC_INFO_VALUE = "xpath=//ul[@class='info']//li[@class='%s']";
 }

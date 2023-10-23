@@ -6,6 +6,8 @@ import commons.BasePage;
 import commons.PageGeneratorManager;
 import io.qameta.allure.Step;
 import pageUIs.nopCommerce.user.HomePageUI;
+import pageUIs.nopCommerce.user.UserAddProductReviewPageUI;
+import pageUIs.nopCommerce.user.UserProductDetailPageUI;
 
 public class UserHomePageObject extends BasePage {
 	WebDriver driver;
@@ -42,6 +44,12 @@ public class UserHomePageObject extends BasePage {
 		clickToElement(driver, HomePageUI.MYACCOUNT_LINK);
 		// return new RegisterPageObject(driver);
 		return PageGeneratorManager.getUserCustomerInfoPage(driver);
+	}
+
+	public UserProductDetailPageObject clickToProductPicture(WebDriver driver, String indexNumber) {
+		waitForElementClickable(driver, UserProductDetailPageUI.DYNAMIC_PRODUCT_BY_INDEX, indexNumber);
+		clickToElement(driver, UserProductDetailPageUI.DYNAMIC_PRODUCT_BY_INDEX, indexNumber);
+		return PageGeneratorManager.getUserProductDetailPage(driver);
 	}
 
 }

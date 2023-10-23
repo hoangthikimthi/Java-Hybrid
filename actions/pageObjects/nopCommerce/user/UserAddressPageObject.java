@@ -17,13 +17,14 @@ public class UserAddressPageObject extends BasePage {
 		return isElementDisplayed(driver, AddressPageUI.FIRSTNAME_TEXTBOX);
 	}
 
-	public void selectContryInDropdown() {
-		clickToElement(driver, AddressPageUI.COUNTRY_DROPDOWN);
-		selectItemInDefautDropdown(driver, AddressPageUI.DYNAMIC_COUNTRY_VALUE, "Viet Nam", "Viet Nam");
+	public void selectItemFromDropdown(WebDriver driver, String dynamicValue, String textValue) {
+		waitForElementClickable(driver, AddressPageUI.DYNAMIC_ADRESS_DROPDOWN, dynamicValue);
+		selectItemInDefautDropdown(driver, AddressPageUI.DYNAMIC_ADRESS_DROPDOWN, textValue, dynamicValue);
 	}
 
-	public void selectContryInDropdown(WebDriver driver, String countryName) {
-		waitForElementClickable(driver, AddressPageUI.COUNTRY_DROPDOWN);
-		selectItemInDefautDropdown(driver, AddressPageUI.COUNTRY_DROPDOWN, "Viet Nam");
+	public Object isInfoSaved(WebDriver driver, String id) {
+		waitForElementVisible(driver, AddressPageUI.INFO_AREA);
+		return getElementText(driver, AddressPageUI.DYNAMIC_INFO_VALUE, id);
 	}
+
 }

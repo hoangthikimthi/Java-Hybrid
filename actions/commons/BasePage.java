@@ -26,9 +26,12 @@ import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
 import pageObjects.nopCommerce.user.UserLoginPageObject;
 import pageObjects.nopCommerce.user.UserMyProductReviewPageObject;
+import pageObjects.nopCommerce.user.UserProductDetailPageObject;
 import pageObjects.nopCommerce.user.UserRewardPointPageObject;
 import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 import pageUIs.nopCommerce.user.HomePageUI;
+import pageUIs.nopCommerce.user.UserAddProductReviewPageUI;
+import pageUIs.nopCommerce.user.UserProductDetailPageUI;
 
 public class BasePage {
 
@@ -204,6 +207,18 @@ public class BasePage {
 	public void sendkeysToTextboxByID(WebDriver driver, String textboxID, String textValue) {
 		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXBOX_ID, textboxID);
 		senkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXBOX_ID, textValue, textboxID);
+	}
+
+	/**
+	 * Enter to dynamic TextArea
+	 * 
+	 * @param driver
+	 * @param textboxID
+	 * @param textValue
+	 */
+	public void sendkeysToTextareaByID(WebDriver driver, String textboxID, String textValue) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_AREA_ID, textboxID);
+		senkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_AREA_ID, textValue, textboxID);
 	}
 
 	public String getElementText(WebDriver driver, String locatorType) {
@@ -563,9 +578,17 @@ public class BasePage {
 			return PageGeneratorManager.getUserMyProductReviewPage(driver);
 		case "Reward points":
 			return PageGeneratorManager.getUserRewardPointPage(driver);
+		case "Change password":
+			return PageGeneratorManager.getChangePasswordPage(driver);
 		default:
 			throw new RuntimeException("Invalid page name at My Account area.");
 		}
+	}
+
+	public BasePage clickToProductPicture(WebDriver driver, String indexNumber) {
+		waitForElementClickable(driver, UserProductDetailPageUI.DYNAMIC_PRODUCT_BY_INDEX, indexNumber);
+		clickToElement(driver, UserProductDetailPageUI.DYNAMIC_PRODUCT_BY_INDEX, indexNumber);
+		return PageGeneratorManager.getUserProductDetailPage(driver);
 	}
 
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
@@ -588,8 +611,15 @@ public class BasePage {
 
 	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
 		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_USER);
+		sleepInSecond(2);
 		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_USER);
 		return PageGeneratorManager.getUserHomePage(driver);
+	}
+
+	public UserLoginPageObject clickToLoginLinkAtUserPage(WebDriver driver) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.LOGIN_LINK_AS_USER);
+		clickToElement(driver, BasePageNopCommerceUI.LOGIN_LINK_AS_USER);
+		return PageGeneratorManager.getUserLoginPage(driver);
 	}
 
 	public AdminLoginPageObjects clickToLogoutLinkAtAdminPage(WebDriver driver) {
