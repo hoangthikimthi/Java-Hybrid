@@ -15,12 +15,12 @@ public class AdminLoginPageObjects extends BasePage {
 
 	public void inputToUsernameTextbox(String emailAddress) {
 		waitForAllElementVisible(driver, AdminLoginPageUI.EMAIL_TEXTBOX);
-		senkeysToElement(driver, AdminLoginPageUI.EMAIL_TEXTBOX, emailAddress);
+		sendkeysToElement(driver, AdminLoginPageUI.EMAIL_TEXTBOX, emailAddress);
 	}
 
 	public void inputToPasswordTextbox(String password) {
 		waitForAllElementVisible(driver, AdminLoginPageUI.PASSWORD_TEXTBOX);
-		senkeysToElement(driver, AdminLoginPageUI.PASSWORD_TEXTBOX, password);
+		sendkeysToElement(driver, AdminLoginPageUI.PASSWORD_TEXTBOX, password);
 	}
 
 	public AdminDashboardPageObjects clickToLoginButton() {

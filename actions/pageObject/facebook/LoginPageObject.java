@@ -29,7 +29,7 @@ public class LoginPageObject extends BasePage {
 
 	public void sendkeyToEmailTextbox(String email) {
 		waitForElementVisible(driver, LoginPageUI.EMAIL_TEXTBOX);
-		senkeysToElement(driver, LoginPageUI.EMAIL_TEXTBOX, email);
+		sendkeysToElement(driver, LoginPageUI.EMAIL_TEXTBOX, email);
 	}
 
 	public boolean isConfirmEmailTextboxDisplayed() {

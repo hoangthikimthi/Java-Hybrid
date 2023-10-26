@@ -1,0 +1,123 @@
+[2023-10-26 16:51:27,202 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 16:52:34,671 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: thihoang
+[2023-10-26 16:52:34,822 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 16:52:34,942 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 16:52:37,974 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 16:52:38,053 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 16:56:24,008 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 16:56:32,608 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 16:56:32,796 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 16:56:32,949 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 16:56:40,563 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 16:56:40,634 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 16:58:57,957 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 16:59:06,338 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 16:59:06,495 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 16:59:06,615 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 16:59:12,584 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 16:59:12,632 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:00:45,701 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:00:54,169 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:00:54,473 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:00:54,648 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:01:01,243 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:01:01,300 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:01:01,319 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
+[2023-10-26 17:01:01,319 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Driver instance name = chromedriver: chrome on windows (99015487cd99505a35e532bad2b67031)
+[2023-10-26 17:02:25,674 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:02:34,077 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:02:34,256 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:02:34,389 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:02:40,396 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:02:40,467 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:02:40,489 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
+[2023-10-26 17:02:40,489 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Driver instance name = chromedriver: chrome on windows (83c43696be81e3b723df1e83ff20df8b)
+[2023-10-26 17:04:52,469 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:05:00,628 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:05:00,799 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:05:00,938 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:05:08,845 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:05:08,901 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:07:17,546 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:07:25,939 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:07:26,103 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:07:26,234 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:07:32,055 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:07:35,405 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:07:48,841 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:07:48,917 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:10:15,007 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:10:23,791 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:10:23,960 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:10:24,087 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:10:33,070 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:10:37,222 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:10:43,701 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:10:43,769 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:12:11,686 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:12:19,967 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:12:20,160 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:12:20,307 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:12:26,339 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:12:29,660 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:12:34,164 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:12:34,449 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-26 17:12:34,524 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:14:52,452 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:14:59,854 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:15:00,032 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:15:00,165 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:15:05,900 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:15:09,398 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:15:13,860 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:15:14,165 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-26 17:15:15,614 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
+[2023-10-26 17:15:15,801 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
+[2023-10-26 17:15:15,865 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:29:35,729 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:29:44,489 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:29:44,679 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:29:44,812 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:29:55,290 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:29:59,964 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:30:12,360 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:30:12,441 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:31:46,243 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:31:54,693 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:31:54,866 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:31:55,016 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:32:01,149 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:32:04,501 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:32:09,207 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:32:09,539 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-26 17:32:10,962 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
+[2023-10-26 17:32:11,122 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
+[2023-10-26 17:32:42,293 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:34:22,469 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:34:31,021 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:34:31,194 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:34:31,367 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:34:37,344 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:34:40,719 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:34:45,330 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:34:45,614 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-26 17:34:47,026 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
+[2023-10-26 17:34:47,168 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
+[2023-10-26 17:34:52,769 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-26 17:34:52,820 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:41:05,996 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
+[2023-10-26 17:41:05,997 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - 
+[2023-10-26 17:42:03,857 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-26 17:43:08,415 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-26 17:43:08,620 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-26 17:43:08,764 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-26 17:43:18,420 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-26 17:43:22,764 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-26 17:43:35,528 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-26 17:43:35,799 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-26 17:43:37,247 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
+[2023-10-26 17:43:37,372 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
+[2023-10-26 17:43:42,404 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-26 17:43:42,467 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
+[2023-10-26 17:43:45,669 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
+[2023-10-26 17:43:45,670 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Driver instance name = chromedriver: chrome on windows (e804159abe0ff64cb808a29450d9c8a2)

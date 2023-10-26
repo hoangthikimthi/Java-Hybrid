@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="wordpress">
+	<!--<listeners>
+		 <listener class-name="commons.MethodListener" />
+		 <listener class-name="reportConfig.ExtentTestListener"/>
+		<listener class-name="reportConfig.AllureTestListener" />
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>-->
+
+	<parameter name="urlAdmin" value="http://localhost:8088/thihoang/wp-admin/" />
+	<parameter name="urlUser" value="http://localhost:8088/thihoang/" />
+	<test name="run on chrome">
+		<parameter name="browser" value="CHROME" />
+		<classes>
+			<class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search" />
+		</classes>
+		<!-- <package>
+			<package name="com.wordpress.admin" />
+		</package>-->
+	</test>
+</suite> 

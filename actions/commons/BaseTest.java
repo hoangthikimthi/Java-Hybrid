@@ -2,6 +2,7 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.logging.Log;
@@ -154,6 +155,12 @@ public class BaseTest {
 		}
 	}
 
+	public int generateFakeNumber() {
+		Random ran = new Random();
+		return ran.nextInt(9999);
+
+	}
+
 	public void deleteAllureReport() {
 		try {
 			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
@@ -219,4 +226,5 @@ public class BaseTest {
 			}
 		}
 	}
+
 }

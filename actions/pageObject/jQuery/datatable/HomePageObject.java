@@ -26,7 +26,7 @@ public class HomePageObject extends BasePage {
 
 	public void enterToHeaderTextboxByLabel(String headerLabel, String value) {
 		waitForElementVisible(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, headerLabel);
-		senkeysToElement(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, value, headerLabel);
+		sendkeysToElement(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, value, headerLabel);
 		pressKeyToElement(driver, HomePageUI.HEADER_TEXTBOX_BY_LABEL, Keys.ENTER, headerLabel);
 	}
 
@@ -61,7 +61,7 @@ public class HomePageObject extends BasePage {
 	public void enterToTextboxByColumNameAtRowNumber(String columeName, String rowNumber, String Value) {
 		int columeIndex = getElementSize(driver, HomePageUI.COLUM_INDEX_BY_NAME, columeName) + 1;
 		waitForElementVisible(driver, HomePageUI.ROW_TEXTBOX_BY_COLUM_INDEX_AND_ROW_INDEX, rowNumber, String.valueOf(columeIndex));
-		senkeysToElement(driver, HomePageUI.ROW_TEXTBOX_BY_COLUM_INDEX_AND_ROW_INDEX, Value, rowNumber, String.valueOf(columeIndex));
+		sendkeysToElement(driver, HomePageUI.ROW_TEXTBOX_BY_COLUM_INDEX_AND_ROW_INDEX, Value, rowNumber, String.valueOf(columeIndex));
 	}
 
 	public void enterToDropdownByColumNameAtRowNumber(String columeName, String rowNumber, String Value) {

@@ -1,6 +1,7 @@
 package commons;
 
 import java.util.List;
+import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -184,13 +185,13 @@ public class BasePage {
 		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_TEXT, buttonText);
 	}
 
-	public void senkeysToElement(WebDriver driver, String locatorType, String textValue) {
+	public void sendkeysToElement(WebDriver driver, String locatorType, String textValue) {
 		WebElement element = getWebElement(driver, locatorType);
 		element.clear();
 		element.sendKeys(textValue);
 	}
 
-	public void senkeysToElement(WebDriver driver, String locatorType, String textValue, String... dynamicValue) {
+	public void sendkeysToElement(WebDriver driver, String locatorType, String textValue, String... dynamicValue) {
 		WebElement element = getWebElement(driver, getDynamicXpath(locatorType, dynamicValue));
 		element.clear();
 		element.sendKeys(textValue);
@@ -206,7 +207,7 @@ public class BasePage {
 	 */
 	public void sendkeysToTextboxByID(WebDriver driver, String textboxID, String textValue) {
 		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXBOX_ID, textboxID);
-		senkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXBOX_ID, textValue, textboxID);
+		sendkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXBOX_ID, textValue, textboxID);
 	}
 
 	/**
@@ -218,7 +219,7 @@ public class BasePage {
 	 */
 	public void sendkeysToTextareaByID(WebDriver driver, String textboxID, String textValue) {
 		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_AREA_ID, textboxID);
-		senkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_AREA_ID, textValue, textboxID);
+		sendkeysToElement(driver, BasePageNopCommerceUI.DYNAMIC_AREA_ID, textValue, textboxID);
 	}
 
 	public String getElementText(WebDriver driver, String locatorType) {

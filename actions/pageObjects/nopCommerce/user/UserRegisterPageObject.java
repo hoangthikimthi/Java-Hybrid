@@ -55,31 +55,31 @@ public class UserRegisterPageObject extends BasePage {
 	@Step("Enter to Firstname Textbox {0}")
 	public void senkeysToFirstNameTextbox(String firstName) {
 		waitForElementVisible(driver, RegisterPageUI.FIRSTNAME_TEXTBOX);
-		senkeysToElement(driver, RegisterPageUI.FIRSTNAME_TEXTBOX, firstName);
+		sendkeysToElement(driver, RegisterPageUI.FIRSTNAME_TEXTBOX, firstName);
 	}
 
 	@Step("Enter to Lasttname Textbox {0}")
 	public void senkeysToLastNameTextbox(String lastName) {
 		waitForElementVisible(driver, RegisterPageUI.LASTNAME_TEXTBOX);
-		senkeysToElement(driver, RegisterPageUI.LASTNAME_TEXTBOX, lastName);
+		sendkeysToElement(driver, RegisterPageUI.LASTNAME_TEXTBOX, lastName);
 	}
 
 	@Step("Enter to Email Textbox {0}")
 	public void senkeysToEmailTextbox(String email) {
 		waitForElementVisible(driver, RegisterPageUI.EMAIL_TEXTBOX);
-		senkeysToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, email);
+		sendkeysToElement(driver, RegisterPageUI.EMAIL_TEXTBOX, email);
 	}
 
 	@Step("Enter to Password Textbox {0}")
 	public void senkeysToPasswordTextbox(String password) {
 		waitForElementVisible(driver, RegisterPageUI.PASSWORD_TEXTBOX);
-		senkeysToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, password);
+		sendkeysToElement(driver, RegisterPageUI.PASSWORD_TEXTBOX, password);
 	}
 
 	@Step("Enter to ConfrirmPassword Textbox {0}")
 	public void senkeysToConfirmPasswordTextbox(String confrirmPassword) {
 		waitForElementVisible(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
-		senkeysToElement(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, confrirmPassword);
+		sendkeysToElement(driver, RegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, confrirmPassword);
 	}
 
 	public String getRegisterSuccessMessage() {
