@@ -57,5 +57,6 @@
 	<classpathentry kind="lib" path="libAllure/allure-testng-2.24.0.jar"/>
 	<classpathentry kind="lib" path="libAllure/bsh-2.0b6.jar"/>
 	<classpathentry kind="lib" path="libAllure/jcommander-1.72.jar"/>
+	<classpathentry kind="lib" path="libraries/joda-time-2.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

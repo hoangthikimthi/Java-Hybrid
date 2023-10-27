@@ -1,4 +1,4 @@
-package pageObject.wordpress.user;
+package pageObject.wordpress;
 
 public class UserPostSearchPO {
 

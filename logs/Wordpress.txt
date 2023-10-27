@@ -1,14 +1,31 @@
-[2023-10-26 17:42:03,857 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
-[2023-10-26 17:43:08,415 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
-[2023-10-26 17:43:08,620 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
-[2023-10-26 17:43:08,764 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
-[2023-10-26 17:43:18,420 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
-[2023-10-26 17:43:22,764 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
-[2023-10-26 17:43:35,528 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
-[2023-10-26 17:43:35,799 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
-[2023-10-26 17:43:37,247 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
-[2023-10-26 17:43:37,372 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
-[2023-10-26 17:43:42,404 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
-[2023-10-26 17:43:42,467 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search Post - Step 01: Open 'Search Post' page
-[2023-10-26 17:43:45,669 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
-[2023-10-26 17:43:45,670 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Driver instance name = chromedriver: chrome on windows (e804159abe0ff64cb808a29450d9c8a2)
+[2023-10-27 16:28:46,834 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 01: Open Brower and adminURL
+[2023-10-27 16:28:51,209 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 02: Enter to UserName textbox with value: editor
+[2023-10-27 16:28:51,362 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 03: Enter to PassWord textbox with value: Kimthi92#
+[2023-10-27 16:28:51,481 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Pre-conditon - Step 04: Click to Login button
+[2023-10-27 16:28:54,367 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 01: Click to 'Post' menu link
+[2023-10-27 16:28:56,104 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 02: Click to 'Add New' button
+[2023-10-27 16:28:58,602 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 03: Enter to Title
+[2023-10-27 16:28:58,917 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 04: Enter to Body
+[2023-10-27 16:29:00,376 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 05: Click to 'Publish' button
+[2023-10-27 16:29:00,523 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Create_New_Post - Step 06: Verify 'Post published' message is displayed
+[2023-10-27 16:29:02,804 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:02,869 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 01: Open 'Search Post' page
+[2023-10-27 16:29:05,562 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 02: Input to search textbox by value: Live Coding TiTle4003
+[2023-10-27 16:29:05,722 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 03: Click to 'Search Post' button
+[2023-10-27 16:29:08,676 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 04: Verify search table contains: Live Coding TiTle4003editor editor
+[2023-10-27 16:29:18,955 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 05: Open End User site
+[2023-10-27 16:29:21,602 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 06: Input to search textbox by value: Live Coding TiTle4003
+[2023-10-27 16:29:21,744 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 07: Click to 'Search' button
+[2023-10-27 16:29:23,378 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 08: Verify Post infor displayed at Home page
+[2023-10-27 16:29:23,452 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:23,530 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:23,592 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:23,659 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:23,660 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 09: Click to Post title
+[2023-10-27 16:29:25,218 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Search View Post - Step 10: Verify Post info is displayed at Post detail page
+[2023-10-27 16:29:25,302 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:25,378 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:25,492 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:25,550 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - ---------------------- Passed -----------------------
+[2023-10-27 16:29:25,576 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - OS name = windows 11
+[2023-10-27 16:29:25,576 INFO com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search] - Driver instance name = chromedriver: chrome on windows (bbb32fefc63f54b12e7f95f2df007563)

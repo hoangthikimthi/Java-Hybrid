@@ -1,4 +1,4 @@
-package pageObject.wordpress.admin;
+package pageObject.wordpress;
 
 public class AdminProductSearchPO {
 
