@@ -37,4 +37,13 @@ public class GlobalConstants {
 	public static final long SHORT_TIMEOUT = 5;
 	public static final long LONG_TIMEOUT = 10;
 	public static final long RETRY_TEST_FAIL = 3;
+
+	public static final String BROWSER_USERNAME = "automationfc";
+	public static final String BROWSER_AUTOMATE_KEY = "aaaaaaaaaaaaaaa";
+	public static final String BROW_STACK_URL = "https://" + BROWSER_USERNAME + ":" + BROWSER_AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+
+	public static final String SOUCE_USERNAME = "automationfc";
+	public static final String SOUCE_AUTOMATE_KEY = "aaaaaaaaaaaaaaa";
+	public static final String SOUCE_URL = "https://" + SOUCE_USERNAME + ":" + SOUCE_AUTOMATE_KEY + "@ONDEMAND.EU-CENTRAL-1.SAUCELABS.COM:443/wd/hub";
+
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -39,10 +40,11 @@ public class Practice_01_MyAccount extends BaseTest {
 	UserMyProductReviewPageObject myProductReviewPage;
 	String replaceEmail, newPassword, productReviewTitle, productReviewText, productReviewPoint, productReviewWidth;
 
-	@Parameters("browser")
+	@Parameters({ "envName", "serverName", "browser", "ipAddress", "portNumber" })
 	@BeforeClass
-	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName);
+	public void beforeClass(@Optional("chrome") String browserName, @Optional("dev") String url, @Optional("local") String envName, @Optional("localhost") String ipAddress, @Optional("4444") String portNumber,
+			@Optional("Windows") String osName, @Optional("10") String osVersion) {
+		driver = getBrowserDriver(browserName, url, envName, ipAddress, portNumber, osName, osVersion);
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 
 		loginPage = homePage.openLoginPage();

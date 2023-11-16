@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="GRID">
+	<parameter name="envName" value="grid" />
+	<parameter name="serverName" value="dev" />
+	<listeners>
+		<listener class-name="commons.MethodListener" />
+		<!--  <listener class-name="reportConfig.ExtentTestListener"/>-->
+		 <listener class-name="reportConfig.AllureTestListener"/>
+		 <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+	</listeners>
+
+
+	<test name="Run on FIREFOX">
+		<parameter name="browser" value="firefox" />
+		<parameter name="ipAddress" value="192.168.1.10" />
+		<parameter name="portNumber" value="5555" />
+		<classes>
+			<class name="com.nopcommerce.user.Practice_01_MyAccount" />
+		
+		</classes>
+	</test>
+	
+	
+	<test name="Run on Chrome">
+		<parameter name="browser" value="chrome" />
+		<parameter name="ipAddress" value="192.168.1.11" />
+		<parameter name="portNumber" value="6666" />
+	
+		<classes>
+			<class name="com.nopcommerce.user.Practice_01_MyAccount" />
+		
+		</classes>
+	</test>
+</suite> 

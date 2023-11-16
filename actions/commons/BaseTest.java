@@ -1,7 +1,11 @@
 package commons;
 
+import static org.mockito.Mockito.RETURNS_DEEP_STUBS;
+
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
@@ -11,12 +15,19 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.joda.time.DateTime;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.opera.OperaOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeSuite;
@@ -25,6 +36,9 @@ import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import javaOOP.BrowserList;
 import javaOOP.ServerList;
+import packageEnviroment.BrowserstackFactory;
+import packageEnviroment.GridFactory;
+import packageEnviroment.SourceLabFactory;
 
 public class BaseTest {
 	private WebDriver driver;
@@ -40,6 +54,30 @@ public class BaseTest {
 		log = LogFactory.getLog(getClass());
 	}
 
+	protected WebDriver getBrowserDriver(String browserName, String url, String envName, String ipAddress, String portNumber, String osName, String osVersion) {
+		switch (envName) {
+		case "local":
+			driver = new LocalFactory(browserName).createDriver();
+			break;
+		case "grid":
+			driver = new GridFactory(browserName, ipAddress, portNumber).createDriver();
+			break;
+		case "browserStack":
+			driver = new BrowserstackFactory(browserName, osName, osVersion).createDriver();
+			break;
+		case "soucelab":
+			driver = new SourceLabFactory(browserName, osName).createDriver();
+			break;
+		default:
+			break;
+		}
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(getEnviromentValue(url));
+		return driver;
+
+	}
+
 	protected WebDriver getBrowserDriver(String browserName) {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
@@ -52,7 +90,7 @@ public class BaseTest {
 			Map<String, Object> prefs = new HashMap<String, Object>();
 			prefs.put("profile.default_content_setting_values.notifications", 2);
 			prefs.put("credentials_enable_service", false);
-			prefs.put("profile.password_manager_enabled", false);
+			prefs.put("profile.password_mansager_enabled", false);
 			prefs.put("autofill.profile_enabled", false);
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
@@ -109,7 +147,7 @@ public class BaseTest {
 
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get(appUrl);
+		driver.get(getEnviromentValue(appUrl));
 		return driver;
 	}
 
