@@ -9,7 +9,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import commons.GlobalConstants;
 
-public class BrowserstackFactory {
+public class BrowserstackFactory implements EnvironmentFactory {
 	private WebDriver driver;
 	private String browserName, osName, osVersion;
 

@@ -1,1 +1,0 @@
-{"uuid":"d6726b06-0156-40b8-b798-f6867ffa5db3","name":"wordpress","children":["25de6fc4-496a-401e-a2d6-af20bbc76bcd"],"befores":[{"name":"initBeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1698398926807,"stop":1698398926815}],"afters":[],"start":1698398926799,"stop":1698398966622}

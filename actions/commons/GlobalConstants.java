@@ -12,8 +12,7 @@ public class GlobalConstants {
 	public static final String UPLOAD_FILE = PROJECT_PATH + File.separator + "uploadFiles" + File.separator;
 
 	public static final String DOWNLOAD_FILE = PROJECT_PATH + File.separator + "downloadFiles";
-
-	public static final String BROWSER_LOG = PROJECT_PATH + File.separator + "browserLogs";
+	public static final String BROWSER_LOG_PATH = PROJECT_PATH + File.separator + "browserLogs";
 
 	public static final String DRAG_DROP_HTML5 = PROJECT_PATH + File.separator + "dragDropHTML5";
 

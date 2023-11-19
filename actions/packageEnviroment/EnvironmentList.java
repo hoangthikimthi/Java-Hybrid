@@ -1,5 +1,5 @@
 package packageEnviroment;
 
-public enum Environman {
+public enum EnvironmentList {
 	DEV, TEST, STAGING, RE_PRODUCTION, PRODUCTION;
 }

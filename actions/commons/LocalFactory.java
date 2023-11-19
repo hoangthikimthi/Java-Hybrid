@@ -15,7 +15,14 @@ import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import exception.BrowserNotSupport;
+import factoryBrowser.ChromeDriverMagager;
+import factoryBrowser.FireFoxDriverManager;
+import factoryBrowser.EdgeDriverManager;
+import factoryBrowser.IEDriverManager;
+import factoryBrowser.OperaDriverManager;
+import factoryBrowser.SafariDriverManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
+
 import javaOOP.BrowserList;
 
 public class LocalFactory {
@@ -30,41 +37,21 @@ public class LocalFactory {
 		BrowserList browser = BrowserList.valueOf(browserName.toUpperCase());
 		switch (browser) {
 		case FIREFOX:
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			driver = new FireFoxDriverManager().getBrowserDriver();
 			break;
 		case CHROME:
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
-			break;
-		// Map<String, Object> prefs = new HashMap<String, Object>();
-		// prefs.put("profile.default_content_setting_values.notifications", 2);
-		// prefs.put("credentials_enable_service", false);
-		// prefs.put("profile.password_manager_enabled", false);
-		// prefs.put("autofill.profile_enabled", false);
-		// ChromeOptions options = new ChromeOptions();
-		// options.setExperimentalOption("prefs", prefs);
-		// options.addArguments("--disable-notifications");
-		// options.addArguments("--incognito");
-		// options.setExperimentalOption("useAutomationExtension", false);
-		// options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-		// driver = new ChromeDriver(options);
-
+			driver = new ChromeDriverMagager().getBrowserDriver();
 		case EDGE:
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			driver = new EdgeDriverManager().getBrowserDriver();
 			break;
 		case IE:
-			WebDriverManager.iedriver().setup();
-			driver = new InternetExplorerDriver();
+			driver = new IEDriverManager().getBrowserDriver();
 			break;
 		case SAFARI:
-			WebDriverManager.safaridriver().setup();
-			driver = new SafariDriver();
+			driver = new SafariDriverManager().getBrowserDriver();
 			break;
 		case OPERA:
-			WebDriverManager.operadriver().setup();
-			driver = new OperaDriver();
+			driver = new OperaDriverManager().getBrowserDriver();
 			break;
 		default:
 			throw new BrowserNotSupport(browserName);

@@ -40,7 +40,7 @@ import packageEnviroment.BrowserstackFactory;
 import packageEnviroment.GridFactory;
 import packageEnviroment.SourceLabFactory;
 
-public class BaseTest {
+public abstract class BaseTest {
 	private WebDriver driver;
 	protected String projectPath = System.getProperty("user.dir");
 	protected final Log log;

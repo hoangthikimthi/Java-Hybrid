@@ -15,7 +15,7 @@ import org.openqa.selenium.safari.SafariOptions;
 import commons.Browser;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class GridFactory {
+public class GridFactory implements EnvironmentFactory {
 	private WebDriver driver;
 	private String browserName, ipAddress, portNumber;
 

@@ -19,7 +19,7 @@ import exception.BrowserNotSupport;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import javaOOP.BrowserList;
 
-public class LocalFactory {
+public class LocalFactory implements EnvironmentFactory {
 	private WebDriver driver;
 	private String browserName;
 
