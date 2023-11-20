@@ -22,7 +22,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import PageUI.jQuery.UploadFiles.BasePageJQueryUI;
 import pageFactory.HomePageObject;
-import pageObject.wordpress.UserHomePO;
 import pageObjects.nopCommerce.admin.AdminLoginPageObjects;
 import pageObjects.nopCommerce.user.UserAddressPageObject;
 import pageObjects.nopCommerce.user.UserHomePageObject;
@@ -628,10 +627,5 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_ADMIN);
 		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AS_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
-	}
-
-	public UserHomePO openEndUserPageURL(WebDriver driver, String userUrl) {
-		openPageUrl(driver, userUrl);
-		return pageObject.wordpress.PageGeneratorManager.getUserHomePage(driver);
 	}
 }
